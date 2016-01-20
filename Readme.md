@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Nikolay Solodukhin](https://htmlacademy.ru/profile/id138404).
-* Наставник: `Андрей Захарченко`.
+* Наставник: [Андрей Захарченко](https://htmlacademy.ru/profile/drewtsure)
 
 ---
 
