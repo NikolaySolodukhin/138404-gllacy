@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Catalog</title>
+  <meta name="keywords" content="important words">
+  <meta name="description" content="about site">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="main-header main-header-catalog">
+    <div class="container">
+      <div class="header-top">
+        <div class="logo">
+          <a href="#" <img src="" width="" height="" alt=""></a>
+        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li>Каталог</li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О компании</a></li>
+          </ul>
+        </nav>
+        <form class="" action="/echo" method="post">
+          <label for="search"></label>
+          <input type="search" name="search" id="search">
+        </form>
+        <a class="login" href="#">Вход</a>
+        <a class="basket" href=#>Корзина</a>
+        <div class="contacts">
+          C 10 до 20 ежедневно
+          <br> 8 812 450-25-25
+        </div>
+        <ul class="breadcrumbs">
+          <li><a href="#">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Сливочное</a></li>
+        </ul>
+        <h1 class="page-title">Сливочное мороженое</h1>
+        <form action="echo" method="post">
+          <p>Сортировка:</p>
+          <select name="sorting">
+            <option value="bypopularity">По пулярности</option>
+            <option value="inascendingprices">По возрастанию цены</option>
+            <option value="descendinglyprices"> По убыванию цены</option>
+          </select>
+          <div class="half-width">
+            <label for="rangeofprices">Цена:</label>
+            100
+            <input type="range" min="100" max="500" step="10" id="rangeofprices">500
+          </div>
+          <div class="radiobutton">
+            <p>Жирность:</p>
+            <label>
+              <input type="radio" name="fatcontent" value="0%"> 0%
+            </label>
+            <label>
+              <input type="radio" name="fatcontent" value="before10%" checked> до 10%
+            </label>
+            <label>
+              <input type="radio" name="fatcontent" value="before30%"> до 30%
+            </label>
+            <label>
+              <input type="radio" name="fatcontent" value="before30%"> cвыше 30%
+            </label>
+          </div>
+          <div class="fillers">
+            <p>Наполнители:</p>
+            <label for="fillers-chocolates">
+              <input type="checkbox" name="chocolates" id="fillers-chocolates" checked> шоколадные
+            </label>
+            <label for="fillers-sugartopping">
+              <input type="checkbox" name="sugartopping" id="fillers-sugartopping" checked> сахарные присыпки
+            </label>
+            <label for="fillers-fruit">
+              <input type="checkbox" name="fruit" id="fillers-fruit"> фрукты
+            </label>
+            <label for="fillers-syrups">
+              <input type="checkbox" name="syrups" id="fillers-syrups"> сироп
+            </label>
+            <label for="fillers-jams">
+              <input type="checkbox" name="jams" id="fillers-jams"> джем
+            </label>
+          </div>
+          <div class="button">
+            <input type="submit" value="Применить">
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </header>
+  <main class="container ">
+
+  </main>
+  <footer class="main-footer">
+    <div class="container ">
+      <div class="footer-social">
+        <a href="#" class="social-btn social-btn-tw">Твиттер</a>
+        <a href="#" class="social-btn social-btn-in">Инстаграмм</a>
+        <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+        <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+      </div>
+      <div class="footer-menu">
+        <a href="#" class=""><b>Для поставщиков</b></a>
+        <a href="#" class="">О производстве</a>
+        <a href="#" class="">Наши документы</a>
+        <a href="#" class="">Экологические стандарты</a>
+      </div>
+      <div class="footer-logo">
+        <a href="#" <img src="" width="" height="" alt=""> </a>
+      </div>
+      <div class="footer-copyright">
+        Сделано в HTML Academy © 2016
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
