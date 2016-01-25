@@ -10,13 +10,13 @@
 </head>
 
 <body>
-  <header class="main-header main-header-catalog">
-    <div class="container">
+  <div class="container">
+    <header class="main-header main-header-catalog">
       <div class="header-top">
         <div class="logo">
           <a href="#" <img src="" width="" height="" alt=""></a>
         </div>
-        <nav class="main-navigation">
+        <nav class="main-navigation main-navigation-catalog">
           <ul>
             <li>Каталог</li>
             <li><a href="#">Доставка и оплата</a></li>
@@ -38,65 +38,94 @@
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Сливочное</a></li>
         </ul>
-        <h1 class="page-title">Сливочное мороженое</h1>
-        <form action="echo" method="post">
-          <p>Сортировка:</p>
-          <select name="sorting">
-            <option value="bypopularity">По пулярности</option>
-            <option value="inascendingprices">По возрастанию цены</option>
-            <option value="descendinglyprices"> По убыванию цены</option>
-          </select>
-          <div class="half-width">
-            <label for="rangeofprices">Цена:</label>
-            100
-            <input type="range" min="100" max="500" step="10" id="rangeofprices">500
-          </div>
-          <div class="radiobutton">
-            <p>Жирность:</p>
-            <label>
-              <input type="radio" name="fatcontent" value="0%"> 0%
-            </label>
-            <label>
-              <input type="radio" name="fatcontent" value="before10%" checked> до 10%
-            </label>
-            <label>
-              <input type="radio" name="fatcontent" value="before30%"> до 30%
-            </label>
-            <label>
-              <input type="radio" name="fatcontent" value="before30%"> cвыше 30%
-            </label>
-          </div>
-          <div class="fillers">
-            <p>Наполнители:</p>
-            <label for="fillers-chocolates">
-              <input type="checkbox" name="chocolates" id="fillers-chocolates" checked> шоколадные
-            </label>
-            <label for="fillers-sugartopping">
-              <input type="checkbox" name="sugartopping" id="fillers-sugartopping" checked> сахарные присыпки
-            </label>
-            <label for="fillers-fruit">
-              <input type="checkbox" name="fruit" id="fillers-fruit"> фрукты
-            </label>
-            <label for="fillers-syrups">
-              <input type="checkbox" name="syrups" id="fillers-syrups"> сироп
-            </label>
-            <label for="fillers-jams">
-              <input type="checkbox" name="jams" id="fillers-jams"> джем
-            </label>
-          </div>
-          <div class="button">
-            <input type="submit" value="Применить">
-          </div>
-        </form>
-
       </div>
-    </div>
-  </header>
-  <main class="container ">
-
-  </main>
-  <footer class="main-footer">
-    <div class="container ">
+    </header>
+    <main>
+      <h1 class="page-title">Сливочное мороженое</h1>
+      <form action="echo" method="post">
+        <p>Сортировка:</p>
+        <select name="sorting">
+          <option value="bypopularity">По пулярности</option>
+          <option value="inascendingprices">По возрастанию цены</option>
+          <option value="descendinglyprices"> По убыванию цены</option>
+        </select>
+        <div class="half-width">
+          <label for="rangeofprices">Цена:</label>
+          100
+          <input type="range" min="100" max="500" step="10" id="rangeofprices">500
+        </div>
+        <div class="radiobutton">
+          <p>Жирность:</p>
+          <label>
+            <input type="radio" name="fatcontent" value="0%"> 0%
+          </label>
+          <label>
+            <input type="radio" name="fatcontent" value="before10%" checked> до 10%
+          </label>
+          <label>
+            <input type="radio" name="fatcontent" value="before30%"> до 30%
+          </label>
+          <label>
+            <input type="radio" name="fatcontent" value="before30%"> cвыше 30%
+          </label>
+        </div>
+        <div class="fillers">
+          <p>Наполнители:</p>
+          <label for="fillers-chocolates">
+            <input type="checkbox" name="chocolates" id="fillers-chocolates" checked> шоколадные
+          </label>
+          <label for="fillers-sugartopping">
+            <input type="checkbox" name="sugartopping" id="fillers-sugartopping" checked> сахарные присыпки
+          </label>
+          <label for="fillers-fruit">
+            <input type="checkbox" name="fruit" id="fillers-fruit"> фрукты
+          </label>
+          <label for="fillers-syrups">
+            <input type="checkbox" name="syrups" id="fillers-syrups"> сироп
+          </label>
+          <label for="fillers-jams">
+            <input type="checkbox" name="jams" id="fillers-jams"> джем
+          </label>
+        </div>
+        <div class="button">
+          <input type="submit" value="Применить">
+        </div>
+      </form>
+      <div class="products-catalog">
+        <img src="" width="" height="" alt="">
+        <a href="#"> Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <img src="" width="" height="" alt="">
+         <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+        <img src="" width="" height="" alt="">
+        <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+        <img src="" width="" height="" alt="">
+         <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+        <img src="" width="" height="" alt="">
+         <a href="#">Сливочное с брусничным джемом</a>
+        <img src="" width="" height="" alt="">
+         <a href="#">Сливочно-черничное с цельными ягодами черники</a>
+        <img src="" width="" height="" alt="">
+         <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+        <img src="" width="" height="" alt="">
+         <a href="#">Сливочное с шоколадной стружкой </a>
+        <img src="" width="" height="" alt="">
+         <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+         <img src="" width="" height="" alt="">
+         <a href="#">Сливочное с ментоловым сиропом</a>
+         <img src="" width="" height="" alt="">
+         <a href="#">Сливочное с кусочками черного шоколада</a>
+         <img src="" width="" height="" alt="">
+         <a href="#">Сливочное с мятными сиропом</a>
+      </div>
+      <div class="paginator">
+        <a class="prev" href="#prev">Назад</a>
+        <a href="#1">1</a>
+        <span>&hellip;</span>
+        <a href="#5">5</a>
+        <a class="next" href="#next">Вперёд</a>
+      </div>
+    </main>
+    <footer class="main-footer">
       <div class="footer-social">
         <a href="#" class="social-btn social-btn-tw">Твиттер</a>
         <a href="#" class="social-btn social-btn-in">Инстаграмм</a>
@@ -115,8 +144,8 @@
       <div class="footer-copyright">
         Сделано в HTML Academy © 2016
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 
 </html>
