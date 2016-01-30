@@ -14,11 +14,19 @@
     <div class="container">
       <div class="header-top">
         <div class="logo">
-          <img src="" width="" height="" alt="">
+          <img src="img/Logo.svg" width="154" height="64" alt="">
         </div>
         <nav class="main-navigation">
           <ul>
-            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="#">Каталог</a>
+              <ul class="catalog-navigation">
+                <li><a href="#">Новинки</a></li>
+                <li><a href="catalog.html">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
+            </li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">О компании</a></li>
           </ul>
@@ -43,11 +51,21 @@
       </div>
       <a href="#" class="btn btn-red">Давайте оба!</a>
       <div class="promo-slider">
-        <ul>
-          <li><img src="" width="" height="" alt=""></li>
-          <li><img src="" width="" height="" alt=""></li>
-          <li><img src="" width="" height="" alt=""></li>
-        </ul>
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <div class="slider-inner">
+          <div class="slider-slides">
+            <img src="img/background-first.png" width="900" height="881" alt="">
+            <img src="img/background-second.png" width="900" height="845" alt="">
+            <img src="img/background-third.png" width="900" height="838" alt="">
+          </div>
+        </div>
       </div>
     </div>
     <section class="features">
@@ -63,17 +81,13 @@
       </div>
       <div class="products">
         <div class="products price-products icon">
-          <img src="" width="" height="" alt="">
-            310 P/кг
+          <img src="img/1.png" width="200" height="200" alt=""> 310 P/кг
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-          <img src="" width="" height="" alt="">
-            380 Р/кг
+          <img src="img/2.png" width="200" height="200" alt=""> 380 Р/кг
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-          <img src="" width="" height="" alt="">
-            355 Р/кг
+          <img src="img/3.png" width="200" height="200" alt=""> 355 Р/кг
           <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-          <img src="" width="" height="" alt="">
-            415 Р/кг
+          <img src="img/4.png" width="200" height="200" alt=""> 415 Р/кг
           <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
         </div>
       </div>
@@ -92,6 +106,7 @@
       <article>
         <br>
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+        <img src="img/backgroundarticle.png" width="420" height="220" alt="">
       </article>
       <div class="subscription">
         Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не слать всякой ненужной ерунды. Честно=)
@@ -129,10 +144,10 @@
         <a href="#" class="">Экологические стандарты</a>
       </div>
       <div class="footer-logo">
-        <a href="#"><img src="#" width="100" height="100" alt=""></a>
+        <a href="#"><img src="img/logo2.svg" width="108" height="37" alt=""></a>
       </div>
       <div class="footer-copyright">
-        Сделано в <a href="#">HTML Academy</a>© 2016
+        Сделано в <a href="htmlacademy.ru">HTML Academy</a>© 2016
       </div>
     </div>
   </footer>
