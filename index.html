@@ -31,11 +31,24 @@
             <li><a href="#">О компании</a></li>
           </ul>
         </nav>
+        <a class="search" href="#"></a>
         <form class="" action="/echo" method="post">
-          <label for="search"></label>
-          <input type="search" name="search" id="search">
+          <label>
+            <input type="search" name="search" placeholder="Что ищем?">
+          </label>
         </form>
         <a class="login" href="#">Вход</a>
+        <form class="" action="/echo" method="post">
+          <label>
+            <input type="email" placeholder="Электронная почта" required>
+          </label>
+          <label>
+            <input type="password" name="password" placeholder="Пароль" required>
+          </label>
+          <input type="submit" value="Войти" class="btn btn-red">
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </form>
         <a class="basket" href="#">Корзина</a>
         <div class="contacts">
           C 10 до 20 ежедневно
@@ -46,10 +59,6 @@
   </header>
   <main class="container">
     <div class="promo">
-      <div class="promo-title">
-        <h3>Крембрюле и пломбир <br>с малиновым джемом</h3>
-      </div>
-      <a href="#" class="btn btn-red">Давайте оба!</a>
       <div class="promo-slider">
         <input type="radio" id="btn-1" name="toggle" checked>
         <input type="radio" id="btn-2" name="toggle">
@@ -61,12 +70,22 @@
         </div>
         <div class="slider-inner">
           <div class="slider-slides">
-            <img src="img/background-first.png" width="900" height="881" alt="">
-            <img src="img/background-second.png" width="900" height="845" alt="">
-            <img src="img/background-third.png" width="900" height="838" alt="">
+            <div class="title-first">
+              <img src="img/background-first.png" width="900" height="881" alt="">
+              <h3>Крембрюле и пломбир с малиновым джемом</h3>
+            </div>
+            <div class="title-second">
+              <img src="img/background-second.png" width="900" height="845" alt="">
+              <h3>Шоколадный пломбир и лимонный сорбет</h3>
+            </div>
+            <div class="title-third">
+              <img src="img/background-third.png" width="900" height="838" alt="">
+              <h3>Пломбир с помадкой и клубничный щербет</h3>
+            </div>
           </div>
         </div>
       </div>
+      <a href="#" class="btn btn-red">Давайте оба!</a>
     </div>
     <section class="features">
       <div class="features-raspberry">
@@ -80,14 +99,20 @@
         <a href="#" class="btn btn-red btn-features">Хочу шоколадки!</a>
       </div>
       <div class="products">
-        <div class="products price-products icon">
-          <img src="img/1.png" width="200" height="200" alt=""> 310 P/кг
+        <div class="products-citrus icon">
+          <img src="img/1.png" width="200" height="200" alt="">310 P/кг
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-          <img src="img/2.png" width="200" height="200" alt=""> 380 Р/кг
+        </div>
+        <div class="products-coffee icon">
+          <img src="img/2.png" width="200" height="200" alt="">380 Р/кг
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-          <img src="img/3.png" width="200" height="200" alt=""> 355 Р/кг
+        </div>
+        <div class="products-raspberry icon">
+          <img src="img/3.png" width="200" height="200" alt="">355 Р/кг
           <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-          <img src="img/4.png" width="200" height="200" alt=""> 415 Р/кг
+        </div>
+        <div class="products-сremebrulee icon">
+          <img src="img/4.png" width="200" height="200" alt="">415 Р/кг
           <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
         </div>
       </div>
@@ -95,16 +120,15 @@
     <section class="advantages">
       <h1 class="advantages-title"> Магазин Глейси - это онлайн и оффлайн магазин по продаже мороженного мороженного собственного производства на развес</h1>
       <ul>
-        <li class="">Все изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий</li>
-        <li class="">Закупка ингридиента производиться только у проверенных фермерских хозяйств и компаний, с которыми нас связывают долговременное сотрудничество </li>
-        <li class="">Для приготовления мороженного используется настояшие сливки и молоко высочайшего качества. Все дополнительные ингридиенты добавки произведены из натурального экологически чистого сырья.</li>
-        <li class="">Доставка нашего мороженного до заказчиков осуществляется в специальной термоупаковке, которая не дает мороженному растаять в пути и позволяет ему сохранить свой превосходный вкус.</li>
+        <li class="own-icecream">Все изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий</li>
+        <li class="farm">Закупка ингридиента производиться только у проверенных фермерских хозяйств и компаний, с которыми нас связывают долговременное сотрудничество </li>
+        <li class="ecologically">Для приготовления мороженного используется настояшие сливки и молоко высочайшего качества. Все дополнительные ингридиенты добавки произведены из натурального экологически чистого сырья.</li>
+        <li class="temperature">Доставка нашего мороженного до заказчиков осуществляется в специальной термоупаковке, которая не дает мороженному растаять в пути и позволяет ему сохранить свой превосходный вкус.</li>
       </ul>
     </section>
     <div class="news-subscription">
-      <p>Новое в нашем блоге</p>
+      <div class="news">Новое в нашем блоге</div>
       <article>
-        <br>
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
         <img src="img/backgroundarticle.png" width="420" height="220" alt="">
       </article>
@@ -125,7 +149,20 @@
         <br>
         <strong>8 812 450-25-25</strong>
         <br> (c 10 до 20 ежедневно)
-        <input type="submit" value="Форма обратной связи" class="btn btn-red">
+        <form action="/echo" method="post">
+          <input type="submit" value="Форма обратной связи" class="btn btn-red">
+        </form>
+        <form action="/echo" method="post">
+          <label>Мы обязательно вам ответим!</label>
+          <label>
+            <input type="text" placeholder="Как вас зовут?" required>
+          </label>
+          <label>
+            <input type="email" placeholder="Ваша почта для ответа?" required>
+          </label>
+          <textarea rows="" cols="" placeholder="Напишите что-нибудь..."></textarea>
+          <input type="submit" class="btn btn-red" value="Отправить">
+        </form>
       </div>
     </div>
   </main>
