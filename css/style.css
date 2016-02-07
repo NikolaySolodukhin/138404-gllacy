@@ -1,16 +1,143 @@
-body{
+html, body{
+  min-width:1200px;
+  min-height: 2416px;
   font-size: 16px;
   line-height: 22px;
-  color:#ffffff;
+  color:black;
   font-weight: bold;
   font-family: Roboto;
+  margin:0;
+  padding:0;
+  outline:black;
 }
-.footer-copyright{
-  font-size: 12px;
-  line-height:normal;
-  color:#ffffff;
-  font-weight:normal;
-  font-family: Roboto Regular;
+.clearfix::after{
+  content:"";
+  display: table;
+  clear:both;
+}
+.main-header{
+margin-bottom:10px;
+}
+.container{
+  width:1146px;
+  margin:0 auto;
+  padding: 0 27px;
+}
+.main-navigation{
+  width:690px;
+  float:left;
+  list-style: none;
+}
+.logo{
+  display: inline-block;}
+.contacts{
+  width:267px;
+  float:right;
+}
+.promo-slider{
+}
+.breadcrumbs{
+display: inline-block;
+list-style: none;
+}
+.features::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.features-raspberry{
+  width:560px;
+  float:left;
+  margin-right: 26px;
+}
+.features-chocolate{
+  width:560px;
+  float:right;
+}
+.product{
+  margin-top:38px;
+  width:267px;
+  display:inline-block;
+  margin-right:22px;
+  margin-bottom:38px;
+  vertical-align: top;
+  text-align: center;
+}
+.product:nth-child(4n){
+  margin-right:0px;
+}
+.products-catalog{
+  margin-bottom: 18px;
+}
+.advantages{
+  padding-top: 29px;
+  width:1146px;
+  margin-bottom: 38px;
+}
+.advantages::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.advantages-title{
+  margin-left:20px;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: Roboto;
+  font-weight: medium;
+}
+.advantages li{
+  float:left;
+  width:490px;
+  margin-right:60px;
+  list-style: none;
+  margin-bottom: 24px;
+}
+.news-subscription{
+margin-bottom:38px;
+}
+.news-subscription::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+article {
+  float:left;
+  width:560px;
+  margin-right: 26px;
+}
+.subscription{
+  float:right;
+  width:560px;
+}
+.map{
+  margin-bottom: 18px;
+}
+.map::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.address{
+  float:right;
+  width:302px;
+  padding-bottom: 57px;
+}
+.paginator{
+display: inline-block;
+}
+.main-footer{
+  margin-bottom: 22px;
+}
+.main-footer::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer-social{
+  float: left;
+  width:267px;
+  margin-right: 26px;
 }
 .footer-menu{
   font-size: 13px;
@@ -18,4 +145,15 @@ body{
   color:#ffffff;
   font-weight:normal;
   font-family: Roboto Regular;
+  width:551px;
+  float: left;
+  margin-right: 25px;
+}
+.footer-copyright{
+  font-size: 12px;
+  line-height:normal;
+  color:black;
+  font-weight:normal;
+  font-family: Roboto Regular;
+  float:right;
 }
