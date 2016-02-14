@@ -18,11 +18,11 @@
   <div class="site-wrapper">
     <header class="main-header">
       <div class="container clearfix">
-        <div class="header-top">
+        <div class="header-top clearfix">
           <div class="logo">
-            <img src="img/logo-gllacy.svg" width="154" height="64" alt="">
+            <img src="img/logo-gllacy.svg" width="154" height="64" alt="Глейси">
           </div>
-          <nav>
+          <nav class="clearfix main-navigation">
             <ul class="main-navigation">
               <li><a href="#">Каталог</a>
                 <ul class="catalog-navigation">
@@ -34,30 +34,36 @@
                 </ul>
               </li>
               <li><a href="#">Доставка и оплата</a></li>
-              <li><a href="#">О компании</a></li>
+              <li><a href="#">О Компании</a></li>
             </ul>
           </nav>
-          <a class="search" href="#"><img src="img/icon-search.svg" width="17" height="17" alt="Поиск"></a>
-          <form class="click-search" action="/echo" method="post">
-            <label>
-              <input type="search" name="search" placeholder="Что ищем?">
-            </label>
-          </form>
-          <a class="login" href="#">Вход</a>
-          <div class="login-entrance">
-            <form action="/echo" method="post">
+          <div class="basket">
+            <a href="#">Пусто</a>
+          </div>
+          <div class="login">
+            <a href="#">Вход</a>
+            <div class="login-entrance">
+              <form action="/echo" method="post">
+                <label>
+                  <input type="email" placeholder="Электронная почта" required>
+                </label>
+                <label>
+                  <input type="password" name="password" placeholder="Пароль" required>
+                </label>
+                <input type="submit" value="Войти" class="btn btn-red">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </form>
+            </div>
+          </div>
+          <div class="search">
+            <a href="#">Поиск</a>
+            <form class="click-search" action="/echo" method="post">
               <label>
-                <input type="email" placeholder="Электронная почта" required>
+                <input type="search" name="search" placeholder="Что ищем?">
               </label>
-              <label>
-                <input type="password" name="password" placeholder="Пароль" required>
-              </label>
-              <input type="submit" value="Войти" class="btn btn-red">
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
             </form>
           </div>
-          <a class="basket" href="#">Пусто</a>
           <div class="contacts">
             C 10 до 20, ежедневно
             <br> <span class="number">8 812 450-25-25</span>
@@ -104,25 +110,41 @@
           <div class="products">
             <div class="product hit">
               <img src="img/icecream-orange-jam.png" width="267" height="267" alt="">
-              <div class="price">310<span>P</span>/кг</div>
+              <div class="price">
+                310
+                <span>P</span>
+                <span class="minify">/кг</span>
+              </div>
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
               <a href="#" class="btn btn-red browsing">Быстрый просмотр</a>
             </div>
             <div class="product hit">
               <img src="img/icecream-pieces-chocolate.png" width="267" height="267" alt="">
-              <div class="price">380<span>P</span>/кг</div>
+              <div class="price">
+                380
+                <span>P</span>
+                <span class="minify">/кг</span>
+              </div>
               <a href="#">Сливочно-кофейное с кусочками шоколада</a>
               <a href="#" class="btn btn-red browsing">Быстрый просмотр</a>
             </div>
             <div class="product hit">
               <img src="img/icecream-white-chocolate.png" width="267" height="267" alt="">
-              <div class="price">355<span>P</span>/кг</div>
+              <div class="price">
+                355
+                <span>P</span>
+                <span class="minify">/кг</span>
+              </div>
               <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
               <a href="#" class="btn btn-red browsing">Быстрый просмотр</a>
             </div>
             <div class="product hit">
               <img src="img/icecream-creme-brulee.png" width="267" height="267" alt="">
-              <div class="price">415<span>P</span>/кг</div>
+              <div class="price">
+                415
+                <span>P</span>
+                <span class="minify">/кг</span>
+              </div>
               <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
               <a href="#" class="btn btn-red browsing">Быстрый просмотр</a>
             </div>
@@ -140,7 +162,7 @@
         <div class="news-subscription clearfix">
           <div class="news-title">Новое в нашем блоге</div>
           <article class="news">
-            <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+            <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
             <img src="img/bg-strawberry.jpg" width="560" height="220" alt="">
           </article>
           <div class="subscription-pattern clearfix">
@@ -156,15 +178,13 @@
       </div>
       <div class="map">
         <div class="feedback">
-          <p>Адрес нашего офиса и
-            <br>офлайн магазина</p>
+          Адрес нашего офиса и
+          <br>офлайн магазина:
           <br>
-          <span class="adress">ул.Большая Конюшенная<br>19/8, Санкт-Петербург<br></span>
+          <span><strong>ул.Большая Конюшенная<br>19/8, Санкт-Петербург</strong><br></span>
           <p>Для заказов по телефону:</p>
-          <br>
-          <strong>8 812 450-25-25</strong>
+          <span><strong>8 812 450-25-25</strong></span>
           <br> (c 10 до 20 ежедневно)
-          <br>
           <a href="#" class="btn btn-red">Форма обратной связи</a>
         </div>
       </div>
