@@ -3,6 +3,22 @@
     outline: 1px solid black;
 }
 
+.sprite
+{
+    display: block;
+
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+}
+
+.sprite-basket-full
+{
+    width: 15px;
+    height: 10px;
+
+    background-position: -10px -50px;
+}
+
 html,
 body
 {
@@ -30,11 +46,6 @@ body
     margin-right: 29px;
 }
 
-.logo img
-{
-    display: block;
-}
-
 .main-navigation
 {
     float: left;
@@ -53,8 +64,6 @@ body
     display: inline-block;
 
     margin-right: 25px;
-
-    white-space: nowrap;
 }
 
 .main-navigation a
@@ -62,9 +71,16 @@ body
     display: block;
 
     margin-top: 20px;
-    padding: 0;
+    padding: 14px 9px 14px 9px;
 
     color: #fff;
+    border-radius: 20px;
+}
+
+.main-navigation a:hover
+{
+    color: #333;
+    background-color: #f7f6f3;
 }
 
 .main-navigation .catalog-navigation
@@ -141,17 +157,7 @@ body
     background-color: #a1b5aa;
 }
 
-.login a,
-.basket a
-{
-    text-decoration: none;
-
-    color: #fff;
-}
-
-.login a:hover,
 .login:hover,
-.basket a:hover,
 .basket:hover
 {
     color: #323232;
@@ -183,6 +189,16 @@ body
     text-decoration: underline;
 
     color: #333;
+}
+
+.login-entrance a:hover
+{
+    color: #ec593c;
+}
+
+.login-entrance a:active
+{
+    color: #ec593c;
 }
 
 .login-entrance input[type='email'],
@@ -226,24 +242,28 @@ body
     color: #fff;
 }
 
-.search:hover
-{
-    background-color: #f8f7f4;
-    background-image: url('../img/icon-search-hover.svg');
-    background-repeat: no-repeat;
-}
-
 .search
 {
     font-size: 0;
 
-    min-width: 17px;
-    min-height: 17px;
+    width: 17px;
+    height: 17px;
     padding: 7px;
 
-    background-image: url('../img/icon-search.svg');
+    background-image: url('..//img/sprite/spritesheet.png');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: -4px -228px;
+}
+
+.search:hover
+{
+    width: 17px;
+    height: 17px;
+
+    background-color: #f8f7f4;
+    background-image: url('..//img/sprite/spritesheet.png');
+    background-repeat: no-repeat;
+    background-position: -4px -191px;
 }
 
 .click-search
@@ -280,40 +300,74 @@ body
     margin-left: 15px;
 }
 
+.login span
+{
+    padding-right: 5px;
+}
+
 .login::before
 {
     position: absolute;
+    top: 5px;
     left: 14px;
 
-    min-width: 21px;
-    min-height: 19px;
+    width: 20px;
+    height: 19px;
 
     content: '';
 
-    background: url('../img/icon-entrance.svg') no-repeat;
+    background-image: url('../img/sprite/spritesheet.png');
+    background-repeat: no-repeat;
+    background-position: -10px -159px;
 }
 
 .login:hover::before
 {
-    background: url('../img/icon-entrance-hover.svg') no-repeat;
+    width: 20px;
+    height: 19px;
+
+    background-image: url('../img/sprite/spritesheet.png');
+    background-repeat: no-repeat;
+    background-position: -10px -120px;
+}
+
+.basket
+{
+    width: 110px;
+}
+
+.basket span
+{
+    font-size: 14px;
+    line-height: 1.2;
+
+    padding-right: 30px;
 }
 
 .basket::before
 {
     position: absolute;
-    left: 0;
+    top: 5px;
+    left: 16px;
 
-    min-width: 21px;
-    min-height: 20px;
+    width: 21px;
+    height: 20px;
 
     content: '';
 
-    background: url('../img/icon-basket.svg') no-repeat;
+    background-image: url('../img/sprite/spritesheet.png');
+    background-repeat: no-repeat;
+    background-position: -10px -10px;
 }
 
-.basket
+.basket:hover::before
 {
-    width: 118px;
+    width: 21px;
+    height: 20px;
+
+    background-image: url('../img/sprite/spritesheet.png');
+    background-repeat: no-repeat;
+    background-position: -10px -80px;
 }
 
 .contacts
@@ -871,7 +925,7 @@ input[name='filling']:disabled:checked + label::after
     vertical-align: top;
 }
 
-.hit::before
+.hit::after
 {
     font-size: 61px;
 
@@ -884,7 +938,6 @@ input[name='filling']:disabled:checked + label::after
     background-image: url('../img/hit.png');
     background-repeat: no-repeat;
 }
-
 
 .price
 {
@@ -939,6 +992,22 @@ input[name='filling']:disabled:checked + label::after
     margin-right: 0;
 }
 
+.product:hover::before
+{
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    left: -5px;
+
+    width: 278px;
+    min-height: 367px;
+
+    content: '';
+
+    border-radius: 15px;
+    background-color: #a7b8ad;
+}
+
 .product .browsing
 {
     position: absolute;
@@ -953,23 +1022,6 @@ input[name='filling']:disabled:checked + label::after
     text-decoration: none;
 
     color: #fff;
-}
-
-.browsing:hover
-{
-    display: block;
-}
-
-product:hover::before
-{
-    position: absolute;
-    z-index: 2;
-
-    width: 288px;
-    min-height: 367px;
-
-    border-radius: 15px;
-    background-color: #a7b8ad;
 }
 
 .advantages
@@ -1206,8 +1258,9 @@ product:hover::before
 
     display: inline-block;
 
-    padding-top: 0 padding-bottom: 0;
+    padding-top: 0;
     padding-right: 10px;
+    padding-bottom: 0;
     padding-left: 10px;
 
     text-align: center;
@@ -1340,17 +1393,29 @@ product:hover::before
     color: #fff;
 }
 
-.icon::before
+.footer-menu .icon::before
 {
     position: absolute;
     top: 2px;
     left: 108px;
+
+    max-width: 30px;
 
     content: 'Сердце';
     text-indent: 1000px;
 
     background-image: url('../img/icon-heart.svg');
     background-repeat: no-repeat;
+}
+
+.footer-menu a:hover
+{
+    color: #ffbc9e;
+}
+
+.footer-menu a:active
+{
+    color: #ffbc9e;
 }
 
 .footer-copyright
@@ -1368,7 +1433,17 @@ product:hover::before
     color: #fefefe;
 }
 
-.footer-copyright a
+.footer-copyright a:nth-child(n)
+{
+    color: #fefefe;
+}
+
+.footer-copyright a:hover:nth-child(n)
+{
+    color: #ffbc9e;
+}
+
+.footer-copyright a:active:nth-child(n)
 {
     color: #fefefe;
 }
@@ -1383,7 +1458,7 @@ product:hover::before
     position: absolute;
     z-index: 2;
     top: 45px;
-    left: 945px;
+    left: 880px;
 
     width: 280px;
     padding-top: 31px;
