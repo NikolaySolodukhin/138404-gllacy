@@ -42,7 +42,7 @@
           </div>
           <div class="login">
             <a href="#">Вход</a>
-            <div class="login-entrance">
+            <div class="login-entrance clearfix">
               <form action="/echo" method="post">
                 <label>
                   <input type="email" placeholder="Электронная почта" required>
@@ -50,6 +50,7 @@
                 <label>
                   <input type="password" name="password" placeholder="Пароль" required>
                 </label>
+                <br>
                 <input type="submit" value="Войти" class="btn btn-red">
                 <a href="#">Забыли пароль?</a>
                 <a href="#">Новая регистрация</a>
@@ -210,15 +211,17 @@
       </div>
     </footer>
   </div>
-  <div class="feedback-form">
+  <div class="feedback-form clearfix">
     <form action="/echo" method="post">
       <legend>Мы обязательно вам ответим!</legend>
       <label>
         <input type="text" placeholder="Как вас зовут?" required>
       </label>
+      <br>
       <label>
         <input type="email" placeholder="Ваша почта для ответа?" required>
       </label>
+      <br>
       <textarea rows="" cols="" placeholder="Напишите что-нибудь..."></textarea>
       <input type="submit" class="btn btn-red" value="Отправить">
     </form>
