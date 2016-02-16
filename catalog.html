@@ -66,55 +66,71 @@
       <span>Сливочное</span>
     </div>
     <h1 class="page-title">Сливочное мороженое</h1>
-    <form action="echo" method="post" class="clearfix">
-      <div class="sorting">
-        <label>Сортировка:</label>
-        <select name="sorting">
-          <option value="bypopularity">По пулярности</option>
-          <option value="inascendingprices">Сначала недорогие</option>
-          <option value="descendinglyprices">Сначала дорогие</option>
-        </select>
-      </div>
-      <div class="half-width">
-        <label for="rangeofprices">Цена: </label>
-        <span>100руб.- 500руб.</span>
-        <input type="range" min="100" max="500" step="10" id="rangeofprices">
-      </div>
-      <div class="radiobuttons">
-        <label>Жирность:</label>
-        <label>
-          <input type="radio" name="fatcontent" value="0%">0%
-        </label>
-        <label>
-          <input type="radio" name="fatcontent" value="before10%" checked>до 10%
-        </label>
-        <label>
-          <input type="radio" name="fatcontent" value="before30%">до 30%
-        </label>
-        <label>
-          <input type="radio" name="fatcontent" value="before30%">cвыше 30%
-        </label>
-      </div>
-      <div class="fillers">
-        <label>Наполнители:</label>
-        <label>
-          <input type="checkbox" name="chocolates" id="fillers-chocolates" checked>шоколадные
-        </label>
-        <label>
-          <input type="checkbox" name="sugartopping" id="fillers-sugartopping" checked>сахарные присыпки
-        </label>
-        <label>
-          <input type="checkbox" name="fruit" id="fillers-fruit">фрукты
-        </label>
-        <label>
-          <input type="checkbox" name="syrups" id="fillers-syrups">сироп
-        </label>
-        <label>
-          <input type="checkbox" name="jams" id="fillers-jams">джем
-        </label>
-        <input type="submit" value="Применить">
-      </div>
-    </form>
+    <div class="filters">
+      <form action="echo" method="post" class="clearfix">
+        <div class="filter">
+          <h5>Сортировка:</h5>
+          <select class="sorting user-block-btn">
+            <option value="bypopularity">По пулярности</option>
+            <option value="inascendingprices">Сначала недорогие</option>
+            <option value="descendinglyprices">Сначала дорогие</option>
+            <option value="on fat">по жирности</option>
+          </select>
+        </div>
+        <div class="filter">
+          <h5>Цена: 100 руб. &ndash; 500 руб.</h5>
+        </div>
+        <div class="filter">
+          <h5>Жирность:</h5>
+          <div class="filter-line fat user-block-btn">
+            <div class="filter-block">
+              <input type="radio" name="fatness" value="0" id="fat-0">
+              <label for="fat-0">0%</label>
+            </div>
+            <div class="filter-block">
+              <input type="radio" name="fatness" value="10" id="fat-10">
+              <label for="fat-10">до 10%</label>
+            </div>
+            <div class="filter-block">
+              <input type="radio" name="fatness" value="30" id="fat-30">
+              <label for="fat-30">до 30%</label>
+            </div>
+            <div class="filter-block">
+              <input type="radio" name="fatness" value="30-100" id="fat-100">
+              <label for="fat-100">выше 30%</label>
+            </div>
+          </div>
+        </div>
+        <div class="filter">
+          <h5>Наполнители:</h5>
+          <div class="filter-line filling user-block-btn">
+            <div class="filter-block">
+              <input type="checkbox" name="filling" id="chocolate" checked>
+              <label for="chocolate">шоколадные</label>
+            </div>
+            <div class="filter-block">
+              <input type="checkbox" name="filling" id="sugar" checked>
+              <label for="sugar">сахарные присыпки</label>
+            </div>
+            <div class="filter-block">
+              <input type="checkbox" name="filling" id="fruit">
+              <label for="fruit">фрукты</label>
+            </div>
+            <div class="filter-block">
+              <input type="checkbox" name="filling" id="syrup">
+              <label for="syrup">сиропы</label>
+            </div>
+            <div class="filter-block">
+              <input type="checkbox" name="filling" id="jam">
+              <label for="jam">джемы</label>
+            </div>
+          </div>
+        </div>
+        <div class="filter filter-btn">
+          <input type="submit" value="Применить" class="user-block-btn">
+        </div>
+      </form>
+    </div>
     <div class="products">
       <div class="product">
         <img src="img/icecream-orange-jam.png" width="267" height="267" alt="">
