@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Глейси</title>
-  <meta name="keywords" content="important words">
-  <meta name="description" content="about site">
+  <title>Gllacy</title>
+  <meta name="keywords" content="ice-cream glaccy shop buy">
+  <meta name="description" content="shop of ice-cream">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
       <div class="container clearfix">
         <div class="header-top clearfix">
           <div class="logo">
-            <img src="img/logo-gllacy.svg" width="154" height="64" alt="Глейси">
+            <img src="img/logo-gllacy.svg" width="154" height="64" alt="Gllacyshop">
           </div>
           <nav class="clearfix main-navigation">
             <ul class="main-navigation">
@@ -110,7 +110,7 @@
           </div>
           <div class="products">
             <div class="product hit">
-              <img src="img/icecream-orange-jam.png" width="267" height="267" alt="">
+              <img src="img/icecream-orange-jam.png" width="267" height="267" alt="ice-cream-orange">
               <div class="price">
                 310
                 <span>P</span>
@@ -120,7 +120,7 @@
               <a href="#" class="btn btn-red browsing">Быстрый просмотр</a>
             </div>
             <div class="product hit">
-              <img src="img/icecream-pieces-chocolate.png" width="267" height="267" alt="">
+              <img src="img/icecream-pieces-chocolate.png" width="267" height="267" alt="ice-cream-pieces-chocolate">
               <div class="price">
                 380
                 <span>P</span>
@@ -140,7 +140,7 @@
               <a href="#" class="btn btn-red browsing">Быстрый просмотр</a>
             </div>
             <div class="product hit">
-              <img src="img/icecream-creme-brulee.png" width="267" height="267" alt="">
+              <img src="img/icecream-creme-brulee.png" width="267" height="267" alt="ice-cream-creme-brulee">
               <div class="price">
                 415
                 <span>P</span>
@@ -164,7 +164,7 @@
           <div class="news-title">Новое в нашем блоге</div>
           <article class="news">
             <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-            <img src="img/bg-strawberry.jpg" width="560" height="220" alt="">
+            <img src="img/bg-strawberry.jpg" width="560" height="220" alt="Strawberry">
           </article>
           <div class="subscription-pattern clearfix">
             <div class="subscription clearfix">
@@ -205,7 +205,7 @@
           <a href="#">Экологические стандарты</a>
         </div>
         <div class="footer-copyright">
-          <a href="#"><img src="img/logo-ha.svg" width="108" height="37" alt=""></a>
+          <a href="#"><img src="img/logo-ha.svg" width="108" height="37" alt="HTML Academy"></a>
           <br>Сделано в <a href="htmlacademy.ru">HTML Academy</a>© 2016
         </div>
       </div>
@@ -214,18 +214,18 @@
   <div class="feedback-form clearfix">
     <form action="/echo" method="post">
       <legend>Мы обязательно вам ответим!</legend>
-      <label>
-        <input type="text" placeholder="Как вас зовут?" required>
-      </label>
+      <input type="text" required>
+      <label for="" placeholder="Как вас зовут?"></label>
       <br>
-      <label>
-        <input type="email" placeholder="Ваша почта для ответа?" required>
-      </label>
+      <input type="email" required>
+      <label for="" placeholder="Ваша почта для ответа?"> </label>
       <br>
-      <textarea rows="" cols="" placeholder="Напишите что-нибудь..."></textarea>
+      <textarea rows="" cols="" id="feedback-textarea" required></textarea>
+      <label for="feedback-textarea" placeholder="Напишите что-нибудь..."></label>
       <input type="submit" class="btn btn-red" value="Отправить">
     </form>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
