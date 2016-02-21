@@ -1,7 +1,3 @@
-* {
-  ouline: 1px solid black;
-}
-
 @font-face {
   font-family: "Roboto";
   src: local("Roboto"), local("Roboto-Regular"), url("roboto.woff2") format("woff2"), url("roboto.woff") format("woff"), format("truetype");
@@ -97,6 +93,14 @@ body {
   border-radius: 35px;
 }
 
+.main-navigation .catalog,
+.main-navigation .catalog:hover {
+  border-radius: 35px;
+  text-decoration: none;
+  background-color: #d07058;
+  color: #ffffff;
+}
+
 .main-navigation .catalog-navigation {
   position: absolute;
   top: 41px;
@@ -154,6 +158,21 @@ body {
 .catalog-navigation a:active,
 .catalog-navigation > li:not(:first-child) > a:active {
   background: #f6b5a5;
+}
+
+.catalog-navigation .creamy,
+.catalog-navigation .creamy:hover {
+  font-size: 14px;
+  margin-top: 0;
+  margin-right: 0px;
+  padding-left: 15px;
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+  padding: 8px 0px 10px 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  background-color: #d07058;
 }
 
 .login,
@@ -1974,6 +1993,8 @@ input[name="filling"]:disabled:checked + label::after {
   margin-right: 17px;
   margin-top: 15px;
   border: none;
+  text-indent: -9999px;
+  overflow: hidden;
 }
 
 .feedback-form-show {

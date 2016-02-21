@@ -44,11 +44,11 @@
             <span>Вход</span>
             <div class="login-entrance clearfix">
               <form action="/echo" method="post">
-                <input type="email" name="email" required>
-                <label for="" placeholder="Электронная почта">
+                <input type="email" name="email" id="login-email" required>
+                <label for="login-email" placeholder="Электронная почта">
                 </label>
-                <input type="password" name="password" required>
-                <label for="" placeholder="Пароль">
+                <input type="password" name="password" id="login-password" required>
+                <label for="login-password" placeholder="Пароль">
                 </label>
                 <br>
                 <input type="submit" value="Войти" class="btn btn-red">
@@ -171,8 +171,8 @@
             <div class="subscription clearfix">
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
               <form action="/echo" method="post">
-                <input type="email" name="email" required>
-                <label for="" placeholder="Электронная почта"></label>
+                <input type="email" name="email" required id="email">
+                <label for="email" placeholder="Электронная почта"></label>
                 <input type="submit" value="Отправить" class="btn btn-red btn-subscription">
               </form>
             </div>
@@ -217,16 +217,16 @@
   <div class="feedback-form clearfix">
     <form action="/echo" method="post">
       <legend>Мы обязательно вам ответим!</legend>
-      <input type="text" name="text" required>
-      <label for="" placeholder="Как вас зовут?"></label>
+      <input type="text" name="text" required id="feedback-text">
+      <label for="feedback-text" placeholder="Как вас зовут?"></label>
       <br>
-      <input type="email" name="email" required>
-      <label for="" placeholder="Ваша почта для ответа?"> </label>
+      <input type="email" name="email" required id="feedback-email">
+      <label for="feedback-email" placeholder="Ваша почта для ответа?"></label>
       <br>
-      <textarea rows="" cols="" id="feedback-textarea" required></textarea>
+      <textarea rows="1" cols="1" id="feedback-textarea" required></textarea>
       <label for="feedback-textarea" placeholder="Напишите что-нибудь..."></label>
       <input type="submit" class="btn btn-red" value="Отправить">
-      <input type="submit" class="close" value="">
+      <input type="submit" class="close" value="close">
     </form>
   </div>
   <script>
