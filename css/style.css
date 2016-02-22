@@ -556,8 +556,6 @@ body {
 }
 
 .basket-full::before {
-  width: 21px;
-  height: 20px;
   content: '';
   background-image: url('../img/icon-basket-full.png');
   background-repeat: no-repeat;
@@ -574,12 +572,9 @@ body {
 }
 
 .basket-full:hover::before {
-  width: 15px;
-  height: 10px;
   background-image: url('../img/icon-basket-full.png');
   background-repeat: no-repeat;
   background-position: 0px 0px;
-  z-index: 10;
 }
 
 .basket-item {
