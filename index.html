@@ -44,7 +44,7 @@
             <span>Вход</span>
             <div class="login-entrance clearfix">
               <form action="/echo" method="post">
-                <input type="email" name="email" id="login-email" required>
+                <input type="text" name="email" id="login-email" required>
                 <label for="login-email" data-placeholder="Электронная почта">
                 </label>
                 <input type="password" name="password" id="login-password" required>
@@ -61,7 +61,7 @@
             <a href="#">Поиск</a>
             <div class="click-search">
               <form action="/echo" method="post">
-                <input type="search" name="search" id="search">
+                <input type="search" name="search" id="search" required>
                 <label for="search" data-placeholder="Что ищем?"></label>
               </form>
             </div>
@@ -180,7 +180,7 @@
         </div>
       </div>
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123604!2d30.320894615584464!3d59.93879686904855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455995813422" width="1200" height="430" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123604!2d30.320894615584464!3d59.93879686904855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455995813422" height="430" style="border:0" allowfullscreen></iframe>
         <div class="feedback">
           Адрес нашего офиса и
           <br>офлайн магазина:
@@ -220,7 +220,7 @@
       <input type="text" name="text" required id="feedback-text">
       <label for="feedback-text" data-placeholder="Как вас зовут?"></label>
       <br>
-      <input type="email" name="email" required id="feedback-email">
+      <input type="text" name="email" required id="feedback-email">
       <label for="feedback-email" data-placeholder="Ваша почта для ответа?"></label>
       <br>
       <textarea rows="1" cols="1" id="feedback-textarea" required></textarea>
