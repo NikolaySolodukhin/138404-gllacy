@@ -77,10 +77,10 @@
           <div class="login-entrance">
             <form action="/echo" method="post">
               <input type="email" name="email" id="login-email" required>
-              <label for="login-email" placeholder="Электронная почта">
+              <label for="login-email" data-placeholder="Электронная почта">
               </label>
-              <input type="password" name="password" id="login-passwod" required>
-              <label for="login-password" placeholder="Пароль">
+              <input type="password" name="password" id="login-password" required>
+              <label for="login-password" data-placeholder="Пароль">
               </label>
               <input type="submit" value="Войти" class="btn btn-red">
               <a href="#">Забыли пароль?</a>
@@ -91,8 +91,8 @@
         <div class="search">
           <span>Поиск</span>
           <form class="click-search" action="/echo " method="post">
-            <input type="search" name="search" id="clic-search">
-            <label for="clic-search" placeholder="Что ищем?">
+            <input type="search" name="text" id="click-search-vr">
+            <label for="click-search-vr" data-placeholder="Что ищем?">
             </label>
           </form>
         </div>
@@ -188,7 +188,7 @@
         <img src="img/icecream-orange-jam.png" width="267" height="267" alt="ice-cream-orange ">
         <div class="price">
           310
-          <span>Р</span>
+          <span class="ruble">Р</span>
           <span class="minify">/кг</span>
         </div>
         <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -198,7 +198,7 @@
         <img src="img/icecream-pieces-chocolate.png" width="267" height="267" alt="ice-cream-pieces-chocolate">
         <div class="price">
           380
-          <span>Р</span>
+          <span class="ruble">Р</span>
           <span class="minify">/кг</span>
         </div>
         <a href="#">Сливочно-кофейное с кусочками шоколада</a>
@@ -208,7 +208,7 @@
         <img src="img/icecream-white-chocolate.png" width="267" height="267" alt="icecream-white-chocolate">
         <div class="price">
           355
-          <span>P</span>
+          <span class="ruble">P</span>
           <span class="minify">/кг</span>
         </div>
         <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
@@ -218,7 +218,7 @@
         <img src="img/icecream-creme-brulee.png" width="267" height="267" alt="ice-cream-creme-brulee">
         <div class="price">
           415
-          <span>P</span>
+          <span class="ruble">P</span>
           <span class="minify">/кг</span>
         </div>
         <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
@@ -238,7 +238,7 @@
         <img src="img/icecream-blueberries.png" width="267" height="267" alt="ice-cream-blueberries">
         <div class="price">
           410
-          <span>Р</span>
+          <span class="ruble">Р</span>
           <span class="minify">/кг</span>
         </div>
         <a href="#">Сливочно-черничное с цельными ягодами черники</a>
@@ -248,7 +248,7 @@
         <img src="img/icecream-lemon-candy.png" width="267" height="267" alt="ice-cream-lemon-candy">
         <div class="price">
           375
-          <span>Р</span>
+          <span class="ruble">Р</span>
           <span class="minify">/кг</span>
         </div>
         <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
@@ -258,7 +258,7 @@
         <img src="img/icecream-chocolate-chips.png " width="267" height="267" alt="ice-cream-chocolate-chips">
         <div class="price">
           320
-          <span>Р</span>
+          <span class="ruble">Р</span>
           <span class="minify">/кг</span>
         </div>
         <a href="#">Сливочное с шоколадной стружкой</a>
@@ -268,7 +268,7 @@
         <img src="img/icecream-vanilla-chocolate-chips.png " width="267" height="267" alt="ice-cream-vanilla-chocolate-chips">
         <div class="price">
           440
-          <span>Р</span>
+          <span class="ruble">Р</span>
           <span class="minify">/кг</span>
         </div>
         <a href="#">Сливочно-ванильное с кусочками шоколада</a>
@@ -278,7 +278,7 @@
         <img src="img/icecream-menthol-syrup.png" width="267" height="267" alt="ice-cream-menthol-syrup">
         <div class="price">
           435
-          <span>P</span>
+          <span class="ruble">P</span>
           <span class="minify">/кг</span>
         </div>
         <a href="#">Сливочное с ментоловым сиропом</a>
@@ -288,7 +288,7 @@
         <img src="img/icecream-pieces-dark-chocolate.png " width="267" height="267" alt="ice-cream-pieces-dark-chocolate">
         <div class="price">
           355
-          <span>Р</span>
+          <span class="ruble">Р</span>
           <span class="minify">/кг</span>
         </div>
         <a href="#">Сливочное с кусочками черного шоколада</a>
@@ -298,7 +298,7 @@
         <img src="img/icecream-mint-syrup.png" width="267" height="267" alt="ice-cream-mint-syrup">
         <div class="price">
           420
-          <span>Р</span>
+          <span class="ruble">Р</span>
           <span class="minify">/кг</span>
         </div>
         <a href="#">Сливочное с мятными сиропом</a>

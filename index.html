@@ -45,10 +45,10 @@
             <div class="login-entrance clearfix">
               <form action="/echo" method="post">
                 <input type="email" name="email" id="login-email" required>
-                <label for="login-email" placeholder="Электронная почта">
+                <label for="login-email" data-placeholder="Электронная почта">
                 </label>
                 <input type="password" name="password" id="login-password" required>
-                <label for="login-password" placeholder="Пароль">
+                <label for="login-password" data-placeholder="Пароль">
                 </label>
                 <br>
                 <input type="submit" value="Войти" class="btn btn-red">
@@ -62,7 +62,7 @@
             <div class="click-search">
               <form action="/echo" method="post">
                 <input type="search" name="search" id="search">
-                <label for="search" placeholder="Что ищем?"></label>
+                <label for="search" data-placeholder="Что ищем?"></label>
               </form>
             </div>
           </div>
@@ -114,7 +114,7 @@
               <img src="img/icecream-orange-jam.png" width="267" height="267" alt="ice-cream-orange">
               <div class="price">
                 310
-                <span>P</span>
+                <span class="ruble">P</span>
                 <span class="minify">/кг</span>
               </div>
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -124,7 +124,7 @@
               <img src="img/icecream-pieces-chocolate.png" width="267" height="267" alt="ice-cream-pieces-chocolate">
               <div class="price">
                 380
-                <span>P</span>
+                <span class="ruble">P</span>
                 <span class="minify">/кг</span>
               </div>
               <a href="#">Сливочно-кофейное с кусочками шоколада</a>
@@ -134,17 +134,17 @@
               <img src="img/icecream-white-chocolate.png" width="267" height="267" alt="">
               <div class="price">
                 355
-                <span>P</span>
+                <span class="ruble">P</span>
                 <span class="minify">/кг</span>
               </div>
-              <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+              <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
               <a href="#" class="btn btn-red browsing">Быстрый просмотр</a>
             </div>
             <div class="product hit">
               <img src="img/icecream-creme-brulee.png" width="267" height="267" alt="ice-cream-creme-brulee">
               <div class="price">
                 415
-                <span>P</span>
+                <span class="ruble">P</span>
                 <span class="minify">/кг</span>
               </div>
               <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
@@ -155,10 +155,10 @@
         <section class="advantages clearfix">
           <h1 class="advantages-title"> Магазин Глейси - это онлайн и оффлайн магазин по продаже мороженного собственного производства на развес</h1>
           <ul class="list clearfix">
-            <li class="own-icecream">Все наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий</li>
-            <li class="farm">Закупка ингридиента производиться только у проверенных фермерских хозяйств и компаний, с которыми нас связывают долговременное сотрудничество </li>
-            <li class="ecologically">Для приготовления мороженого используется настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты добавки произведены из натурального экологически чистого сырья.</li>
-            <li class="temperature">Доставка нашего мороженого до заказчиков осуществляется в специальной термоупаковке, которая не дает мороженному растаять в пути и позволяет ему сохранить свой превосходный вкус.</li>
+            <li class="own-icecream">Все наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+            <li class="farm">Закупка ингридиента производиться только у проверенных фермерских хозяйств и компаний, с которыми нас связывают долговременное сотрудничество.</li>
+            <li class="ecologically">Для приготовления мороженого используется настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты добавки произведены из натурального, экологически чистого сырья.</li>
+            <li class="temperature">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженному растаять в пути и позволяет ему сохранить свой превосходный вкус.</li>
           </ul>
         </section>
         <div class="news-subscription clearfix">
@@ -172,7 +172,7 @@
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
               <form action="/echo" method="post">
                 <input type="email" name="email" required id="email">
-                <label for="email" placeholder="Электронная почта"></label>
+                <label for="email" data-placeholder="Электронная почта"></label>
                 <input type="submit" value="Отправить" class="btn btn-red btn-subscription">
               </form>
             </div>
@@ -180,12 +180,12 @@
         </div>
       </div>
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123604!2d30.320894615584464!3d59.93879686904855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455995813422" width="1200" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123604!2d30.320894615584464!3d59.93879686904855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455995813422" width="1200" height="430" style="border:0" allowfullscreen></iframe>
         <div class="feedback">
           Адрес нашего офиса и
           <br>офлайн магазина:
           <br>
-          <span><strong>ул.Большая Конюшенная<br>19/8, Санкт-Петербург</strong><br></span>
+          <span><strong>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</strong><br></span>
           <p>Для заказов по телефону:</p>
           <span><strong>8 812 450-25-25</strong></span>
           <br> (c 10 до 20 ежедневно)
@@ -216,32 +216,20 @@
   </div>
   <div class="feedback-form clearfix">
     <form action="/echo" method="post">
-      <legend>Мы обязательно вам ответим!</legend>
+      <div class="legend">Мы обязательно вам ответим!</div>
       <input type="text" name="text" required id="feedback-text">
-      <label for="feedback-text" placeholder="Как вас зовут?"></label>
+      <label for="feedback-text" data-placeholder="Как вас зовут?"></label>
       <br>
       <input type="email" name="email" required id="feedback-email">
-      <label for="feedback-email" placeholder="Ваша почта для ответа?"></label>
+      <label for="feedback-email" data-placeholder="Ваша почта для ответа?"></label>
       <br>
       <textarea rows="1" cols="1" id="feedback-textarea" required></textarea>
-      <label for="feedback-textarea" placeholder="Напишите что-нибудь..."></label>
+      <label for="feedback-textarea" data-placeholder="Напишите что-нибудь..."></label>
       <input type="submit" class="btn btn-red" value="Отправить">
       <input type="submit" class="close" value="close">
     </form>
   </div>
-  <script>
-    var link = document.querySelector(".feedback .btn")
-    var popup = document.querySelector(".feedback-form")
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-      popup.classList.add("feedback-form-show");
-    });
-    var close = document.querySelector(".feedback-form .close")
-    close.addEventListener("click", function (event) {
-      event.preventDefault();
-      popup.classList.remove("feedback-form-show");
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
