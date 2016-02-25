@@ -280,8 +280,11 @@ body {
   position: absolute;
   left: 15px;
   display: block;
-  margin-top: calc(-2.7em - 1px);
   pointer-events: none
+}
+
+.login-entrance input[type=text]+label {
+  margin-top: calc(-2.7em - 1px)
 }
 
 .login-entrance input[type=password]+label {
@@ -670,7 +673,10 @@ body {
   color: #fff
 }
 
-.price-item p,
+.price-item p {
+  margin-top: 17px
+}
+
 .products-count p {
   width: 117px;
   margin-top: 17px
@@ -737,11 +743,11 @@ body {
 }
 
 .breadcrumbs a {
+  position: relative;
   float: left;
   margin: 0 22px 0 0;
   transition: all .5s;
-  color: #fff;
-  position: relative
+  color: #fff
 }
 
 .breadcrumbs a:hover {
@@ -1167,8 +1173,7 @@ input[name=filling]:disabled:checked+label::after {
   font-weight: 700;
   line-height: 1.2;
   margin-top: 13px;
-  margin-bottom: 17px;
-  padding-left: 18px
+  margin-bottom: 17px
 }
 
 .features a,
@@ -1178,6 +1183,7 @@ input[name=filling]:disabled:checked+label::after {
   line-height: 1.2
 }
 
+.features h3,
 .features p {
   padding-left: 18px
 }
@@ -1199,10 +1205,10 @@ input[name=filling]:disabled:checked+label::after {
 }
 
 .features-raspberry {
+  float: left;
   margin-right: 26px;
   background-color: #811e3b;
-  background-image: url('../img/bg-raspberries.jpg');
-  float: left
+  background-image: url('../img/bg-raspberries.jpg')
 }
 
 .features-chocolate {
@@ -1253,13 +1259,13 @@ input[name=filling]:disabled:checked+label::after {
 }
 
 .price {
+  font-size: 45px;
   position: absolute;
   top: 225px;
   left: -2px;
   display: inline-block;
   cursor: pointer;
-  vertical-align: top;
-  font-size: 45px
+  vertical-align: top
 }
 
 .price .ruble {
@@ -1813,7 +1819,6 @@ input[name=filling]:disabled:checked+label::after {
 
 .feedback a,
 .feedback span {
-  font-size: 18px;
   font-weight: 700;
   font-style: normal;
   line-height: 24px
@@ -1830,6 +1835,10 @@ input[name=filling]:disabled:checked+label::after {
   vertical-align: top;
   text-decoration: none;
   color: #fff
+}
+
+.feedback span {
+  font-size: 18px
 }
 
 .feedback-form {
