@@ -7,7 +7,7 @@
   <meta name="keywords" content="ice-cream glaccy shop buy">
   <meta name="description" content="shop of ice-cream">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 </head>
 
@@ -24,17 +24,17 @@
           </div>
           <nav class="clearfix main-navigation">
             <ul class="main-navigation">
-              <li><a href="#">Каталог</a>
+              <li class="item"><a href="#">Каталог</a>
                 <ul class="catalog-navigation">
-                  <li><a href="#">Новинки</a></li>
-                  <li><a href="catalog.html">Сливочное</a></li>
-                  <li><a href="#">Щербеты</a></li>
-                  <li><a href="#">Фруктовый лед</a></li>
-                  <li><a href="#">Мелорин</a></li>
+                  <li class="component"><a href="#">Новинки</a></li>
+                  <li class="component"><a href="catalog.html">Сливочное</a></li>
+                  <li class="component"><a href="#">Щербеты</a></li>
+                  <li class="component"><a href="#">Фруктовый лед</a></li>
+                  <li class="component"><a href="#">Мелорин</a></li>
                 </ul>
               </li>
-              <li><a href="#">Доставка и оплата</a></li>
-              <li><a href="#">О Компании</a></li>
+              <li class="item"><a href="#">Доставка и оплата</a></li>
+              <li class="item"><a href="#">О Компании</a></li>
             </ul>
           </nav>
           <div class="basket">
@@ -171,7 +171,7 @@
             <div class="subscription clearfix">
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
               <form action="/echo" method="post">
-                <input type="email" name="email" required id="email">
+                <input type="text" name="text" required id="email">
                 <label for="email" data-placeholder="Электронная почта"></label>
                 <input type="submit" value="Отправить" class="btn btn-red btn-subscription">
               </form>
@@ -189,7 +189,7 @@
           <p>Для заказов по телефону:</p>
           <span><strong>8 812 450-25-25</strong></span>
           <br> (c 10 до 20 ежедневно)
-          <a href="#" class="btn btn-red">Форма обратной связи</a>
+          <a href="modalwindow.html" class="btn btn-red">Форма обратной связи</a>
         </div>
       </div>
     </main>
@@ -223,13 +223,13 @@
       <input type="text" name="email" required id="feedback-email">
       <label for="feedback-email" data-placeholder="Ваша почта для ответа?"></label>
       <br>
-      <textarea rows="1" cols="1" id="feedback-textarea" required></textarea>
+      <textarea rows="1" cols="1" required id="feedback-textarea"></textarea>
       <label for="feedback-textarea" data-placeholder="Напишите что-нибудь..."></label>
       <input type="submit" class="btn btn-red" value="Отправить">
       <input type="submit" class="close" value="close">
     </form>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
