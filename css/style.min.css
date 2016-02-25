@@ -86,7 +86,7 @@ body {
     background-color: #f7f6f3
 }
 
-.main-navigation .catalog,.main-navigation .catalog:hover {
+.main-navigation .item .catalog,.main-navigation .item .catalog:hover {
     text-decoration: none;
     color: #fff;
     border-radius: 35px;
