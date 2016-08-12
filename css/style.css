@@ -10,7 +10,7 @@
 @font-face
 {
     font-family: 'Roboto';
-    font-weight: 500;
+    font-weight: 500                                                ;font-weight: 400;
     font-style: normal;
 
     src: local('Roboto Medium'), local('Roboto-Medium'), url('../fonts/robotomedium.woff2') format('woff2'), url('../fonts/robotomedium.woff') format('woff'), format('truetype');
@@ -2414,11 +2414,12 @@ input[name='filling']:disabled:checked + label::after
     line-height: 20px;
 
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     top: 64px;
     left: 50%;
 
     width: 280px;
+    margin-top: 140%;
     margin-left: 270px;
     padding-top: 30px;
     padding-bottom: 25px;
