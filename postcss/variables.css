@@ -1,4 +1,4 @@
-$font-family-set: "Pt Sans", "Arial", sans-serif;
+$font-family-set: "Roboto", "Helvetica", "Arial", sans-serif;
 
 @custom-media --tablet-width (min-width: 768px);
 @custom-media --desktop-width (min-width: 1100px);
