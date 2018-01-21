@@ -23,7 +23,6 @@ var server = require('browser-sync').create();
 var flexbugsFixes = require('postcss-flexbugs-fixes');
 var stylelint = require('gulp-stylelint');
 var htmlhint = require('gulp-htmlhint');
-// var bemLinter = require('postcss-bem-linter');
 var reporter = require('postcss-reporter');
 var eslint = require('gulp-eslint');
 var sourcemaps = require('gulp-sourcemaps');

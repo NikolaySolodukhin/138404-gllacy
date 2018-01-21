@@ -2,12 +2,23 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Nikolay Solodukhin">
   <title>Catalog</title>
-  <meta name="keywords" content="ice-cream glaccy shop buy">
+  <meta name="keywords" content="ice-cream, gllacy, shop, buy">
   <meta name="description" content="shop of ice-cream">
+  <link type="font/woff2" href="fonts/roboto.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link type="font/woff" href="fonts/roboto.woff" rel="preload" as="font" crossorigin="anonymous">
+  <link type="font/woff2" href="fonts/robotobold.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link type="font/woff" href="fonts/robotobold.woff" rel="preload" as="font" crossorigin="anonymous">
+  <link type="font/woff2" href="fonts/robotoblack.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link type="font/woff" href="fonts/robotoblack.woff" rel="preload" as="font" crossorigin="anonymous">
+  <link type="font/woff2" href="fonts/robotomedium.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link type="font/woff" href="fonts/robotomedium.woff" rel="preload" as="font" crossorigin="anonymous">
+  <link href="css/style.css" rel="preload" as="style">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,15 +26,15 @@
   <header class="main-header">
     <div class="container">
       <div class="header-top clearfix">
-        <div class="logo">
+        <div class="healogo">
           <a href="index.html">
             <img src="img/logo-gllacy.svg" width="154" height="64" alt="Gllacyshop">
           </a>
         </div>
-        <nav>
-          <ul class="main-navigation">
-            <li class="main-navigation-item">
-              <a class="catalog" href="#">Каталог</a>
+        <nav class="main-navigation">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a class="main-navigation__link catalog-navigation" href="#">Каталог</a>
               <ul class="catalog-navigation">
                 <li class="catalog-navigation-component">
                   <a href="#">Новинки</a>
