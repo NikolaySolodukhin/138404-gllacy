@@ -1,0 +1,83 @@
+.basket {
+  position: relative;
+  width: 77px;
+  margin-left: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 44px;
+  font-size: 14px;
+  line-height: 1.2;
+  background-color: rgba(255, 255, 255, .2);
+  border-radius: 15px;
+
+  &:hover,
+  &:focus {
+    color: #323232;
+    background-color: #f8f7f4;
+
+    & .basket__popup {
+      visibility: visible;
+    }
+
+    &::before {
+      content: '';
+      width: 21px;
+      height: 20px;
+      background-image: url("../../img/sprite/sprite.png");
+      background-repeat: no-repeat;
+      background-position: -10px -80px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 117px;
+      height: 5px;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 16px;
+    width: 21px;
+    height: 20px;
+    background-image: url("../../img/sprite/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -10px -10px;
+  }
+}
+
+.basket__popup {
+  position: absolute;
+  top: 35px;
+  right: -1px;
+  z-index: 3;
+  visibility: hidden;
+}
+
+.basket--full {
+  color: #313131;
+  background-color: white;
+
+  &::before {
+    content: "";
+    background-image: url(../img/icon-basket-full.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &:hover,
+  &:focus {
+
+    &::before {
+      content: "";
+      background-image: url(../img/icon-basket-full.png);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+}

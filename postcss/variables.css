@@ -1,5 +1,6 @@
-$font-family-set: "Roboto", "Helvetica", "Arial", sans-serif;
-
-$column-width: 22.2%;
-$padding-container: 2.3%;
-$padding-between-column: 2.2%;
+:root {
+  --font-family-set: "Roboto", "Helvetica", "Arial", sans-serif;
+  --column-width: 22.2%;
+  --padding-container: 2.3%;
+  --padding-between-column: 2.2%;
+}

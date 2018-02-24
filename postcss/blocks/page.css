@@ -1,12 +1,9 @@
 .page {
   min-width: 900px;
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.2;
-  font-family: $font-family-set;
+  font-family: var(--font-family-set);
 
   color: white;
   background-color: #849d8f;

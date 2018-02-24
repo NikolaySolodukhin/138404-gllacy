@@ -2,8 +2,7 @@
 
 # Desktop browsers
 Explorer >= 11
-Edge >= 12
-Safari >= 8
-last 4 Chrome versions
-last 4 Firefox versions
-last 4 Opera versions
+Safari >= 10
+last 2 Chrome versions
+last 2 Firefox versions
+last 2 Opera versions
