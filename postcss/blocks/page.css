@@ -6,5 +6,44 @@
   font-family: var(--font-family-set);
 
   color: white;
+}
+
+.page__controls {
+  display: none;
+}
+
+.page__wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  transition: background-image .5s ease, background-color .5s ease;
+}
+
+#btn-1:checked ~ .page__wrapper {
   background-color: #849d8f;
+  background-image: url('../img/bg-first.png');
+}
+
+#btn-2:checked ~ .page__wrapper {
+  background-color: #8996a6;
+  background-image: url(../img/bg-second.png);
+}
+
+#btn-3:checked ~ .page__wrapper {
+  background-color: #9d8b84;
+  background-image: url('../img/bg-third.png');
+}
+
+#btn-1:checked ~ .page__wrapper .slider__control:first-child,
+#btn-2:checked ~ .page__wrapper .slider__control:nth-child(2),
+#btn-3:checked ~ .page__wrapper .slider__control:nth-child(3) {
+  background-color: white;
+}
+
+#btn-1:checked ~ .page__wrapper .slider__item:first-child,
+#btn-2:checked ~ .page__wrapper .slider__item:nth-child(2),
+#btn-3:checked ~ .page__wrapper .slider__item:nth-child(3) {
+  display: block;
 }

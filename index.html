@@ -29,9 +29,9 @@
 </head>
 
 <body class="page">
-  <div class="controls">
-
-  </div>
+  <input class="page__controls" id="btn-1" name="toggle" type="radio" checked>
+  <input class="page__controls" id="btn-2" name="toggle" type="radio">
+  <input class="page__controls" id="btn-3" name="toggle" type="radio">
   <div class="page__wrapper">
     <header class="main-header">
 
@@ -133,35 +133,24 @@
     </header>
 
     <main class="page-main container">
-      <div class="promo">
-        <div class="promo__slider slider">
-          <div class="slider__list">
-            <div class="slider__item slide" id="slide1">
-              <div class="slide__title">Крем-брюле и пломбир &nbsp;с малиновым джемом</div>
-              <a class="btn btn--red btn--slide" href="#">Давайте оба!</a>
-            </div>
-            <div class="slider__item slide" id="slide2">
-              <div class="slide__title">Шоколадный пломбир и лимонный сорбет</div>
-              <a class="btn btn--slide" href="#">Давайте оба!</a>
-            </div>
-            <div class="slider__item slide" id="slide3">
-              <div class="slide__title">Пломбир с помадкой и клубничный щербет</div>
-              <a class="btn btn--red btn--slide" href="#">Давайте оба!</a>
-            </div>
-            <div class="slider-controls">
-              <section>
-                <input id="btn-1" name="toggle" type="radio" checked>
-                <label for="btn-1"></label>
-              </section>
-              <section>
-                <input id="btn-2" name="toggle" type="radio">
-                <label for="btn-2"></label>
-              </section>
-              <section>
-                <input id="btn-3" name="toggle" type="radio">
-                <label for="btn-3"></label>
-              </section>
-            </div>
+      <div class="slider">
+        <div class="slider__list">
+          <div class="slider__item" id="slide-1">
+            <h2 class="slider__title">Крем-брюле и пломбир &nbsp;с малиновым джемом</h2>
+            <a class="btn btn--orange btn--slide btn--xl" href="#">Давайте оба!</a>
+          </div>
+          <div class="slider__item" id="slide-2">
+            <h2 class="slider__title">Шоколадный пломбир и лимонный сорбет</h2>
+            <a class="btn btn--orange btn--slide btn--xl" href="#">Давайте оба!</a>
+          </div>
+          <div class="slider__item" id="slide-3">
+            <h2 class="slider__title">Пломбир с помадкой и клубничный щербет</h2>
+            <a class="btn btn--orange btn--slide btn--xl" href="#">Давайте оба!</a>
+          </div>
+          <div class="slider__controls">
+            <label class="slider__control" for="btn-1"></label>
+            <label class="slider__control" for="btn-2"></label>
+            <label class="slider__control" for="btn-3"></label>
           </div>
         </div>
       </div>
@@ -271,7 +260,7 @@
 
     <div class="map" id="map-canvas">
     </div>
-    
+
     <footer class="main-footer container">
       <div class="main-footer__social social">
         <a class="social__btn social__btn--tw" href="#">Твиттер</a>
