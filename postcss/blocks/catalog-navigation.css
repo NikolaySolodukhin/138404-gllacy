@@ -59,7 +59,8 @@
   &--active {
     background-color: #d07058;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: #d07058;
     }
   }

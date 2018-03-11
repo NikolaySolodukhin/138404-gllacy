@@ -31,7 +31,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('clean:dev', function() {
-  return del('js/main.js', 'img/symbols.svg', 'css/style.css');
+  return del('img/symbols.svg', 'css/style.css');
 });
 
 gulp.task('style', function() {
@@ -130,13 +130,13 @@ gulp.task('jsmin', function() {
     .pipe(gulp.dest('build/js'));
 });
 
-gulp.task('concat:dev', function() {
-  return gulp
-    .src(['js/utils.js', 'js/map.js'])
-    .pipe(concat('main.js'))
-    .pipe(gulp.dest('js'))
-    .pipe(server.stream());
-});
+// gulp.task('concat:dev', function() {
+//   return gulp
+//     .src(['js/utils.js', 'js/map.js'])
+//     .pipe(concat('main.js'))
+//     .pipe(gulp.dest('js'))
+//     .pipe(server.stream());
+// });
 
 gulp.task('images', function() {
   return gulp
@@ -216,7 +216,7 @@ gulp.task('serve', ['clean:dev', 'style:dev'], function() {
 });
 
 gulp.task('build', function(fn) {
-  run('clean', ['copy', 'style', 'htmlminify', 'jsmin'], fn);
+  run('clean', ['copy', 'style', 'htmlminify'], fn);
 });
 
 gulp.task('demo', function() {

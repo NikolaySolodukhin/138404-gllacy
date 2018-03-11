@@ -1,0 +1,36 @@
+.news {
+  box-sizing: border-box;
+  width: calc(var(--column-width) * 2 + var(--padding-between-column));
+  min-height: 220px;
+  padding: 20px;
+  color: #323232;
+  background-color: white;
+  background-image: url("../../img/bg-strawberry.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.news__title {
+  margin-top: 3px;
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.news__description {
+  display: block;
+  width: 290px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+
+  &:hover,
+  &:active,
+  &:focus {
+   color: #ffbc9e;
+  }
+}

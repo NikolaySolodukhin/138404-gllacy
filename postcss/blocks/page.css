@@ -6,10 +6,15 @@
   font-family: var(--font-family-set);
 
   color: white;
+  background-color: #849d8f;
 }
 
 .page__controls {
   display: none;
+}
+
+.page__main {
+  box-sizing: border-box;
 }
 
 .page__wrapper {
@@ -19,6 +24,28 @@
   background-repeat: no-repeat;
   background-position: top center;
   transition: background-image .5s ease, background-color .5s ease;
+
+  &::before,
+  &::after {
+    content: "";
+    visibility: hidden;
+  }
+
+  &::before {
+    background-image: url('../img/bg-first.png');
+  }
+
+  &::after {
+    background-image: url(../img/bg-second.png);
+  }
+}
+
+.page__advantages {
+  margin-bottom: 40px;
+}
+
+.page__subscription {
+  margin-bottom: 40px;
 }
 
 #btn-1:checked ~ .page__wrapper {

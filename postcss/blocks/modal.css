@@ -1,0 +1,55 @@
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  display: none;
+  box-sizing: border-box;
+  width: 477px;
+  min-height: 441px;
+  padding: 15px 25px 27px;
+  background-color: #f8f7f4;
+  border-radius: 10px;
+  transform: translate(-50%,-50%);
+
+  &--show {
+    display: block;
+  }
+}
+
+
+.modal__btn {
+  position: absolute;
+  top: 8px;
+  right: 7px;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    content: "Закрыть";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 17px;
+    background-image: url("../img/icon-close.svg");
+    background-repeat: no-repeat;
+    transform: translate(-50%,-50%);
+  }
+}
+
+.modal__legend {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #323232;
+}
+
+.modal__form {
+  margin-top: 20px;
+}

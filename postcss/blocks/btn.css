@@ -56,4 +56,22 @@
     padding-left: 13px;
     text-shadow: 0 2px 5px rgba(160,32,11,.76);
   }
+
+  &--product {
+    position: absolute;
+    display: none;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+  }
+
+  &--subscription {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  &--feedback-form {
+    margin-left: auto;
+    display: block;
+  }
 }

@@ -1,0 +1,92 @@
+.advantages {
+  padding-top: 24px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #eee3c9;
+  background-image: url(../img/bg-wafer.jpg);
+  border-radius: 15px;
+}
+
+.advantages__title {
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+}
+
+
+.advantages__item {
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  box-sizing: border-box;
+  width: 50%;
+  margin-bottom: 23px;
+
+  &:nth-child(odd) {
+    padding-right: 10px;
+    padding-left: 53px;
+  }
+
+  &:nth-child(even) {
+    padding-right: 0px;
+    padding-left: 70px;
+  }
+
+  &::before {
+    position: absolute;
+    top: -12px;
+    left: -2px;
+    min-width: 48px;
+    min-height: 48px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+  }
+
+  &--icecream {
+    &::before {
+      content: "Мороженное";
+      background-image: url(../img/icon-icecream.svg);
+    }
+  }
+
+  &--cow {
+    &::before {
+      content: "Коровка";
+      left: 15px;
+      background-image: url(../img/icon-cow.svg);
+    }
+  }
+
+  &--leaf {
+    &::before {
+      content: "Листик";
+      background-image: url(../img/icon-leaflet.svg);
+    }
+  }
+
+  &--temp {
+    &::before {
+      content: "Температура";
+      left: 15px;
+      background-image: url(../img/icon-thermometer.svg);
+    }
+  }
+}

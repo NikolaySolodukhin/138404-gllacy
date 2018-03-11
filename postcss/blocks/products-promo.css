@@ -1,0 +1,24 @@
+.products-promo__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.products-promo__item {
+
+  &--hit {
+    &::before {
+      content: "Хит";
+      position: absolute;
+      left: 0px;
+      z-index: 1;
+      width: 61px;
+      height: 61px;
+      overflow: hidden;
+      font-size: 61px;
+      text-indent: -9999px;
+      background-image: url("../img/hit.png");
+      background-repeat: no-repeat;
+    }
+  }
+}
