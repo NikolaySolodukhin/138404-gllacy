@@ -10,11 +10,12 @@
 }
 
 .map__feedback {
-  position: relative;
+  position: absolute;
   top: 62px;
+  left: 50%;
+  z-index: 1;
   box-sizing: border-box;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: var(--padding-container);
-  padding-left: var(--padding-container);
+  width: 100%;
+  transform: translateX(-50%);
+  pointer-events: none;
 }

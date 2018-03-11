@@ -28,4 +28,28 @@
     popup.classList.remove('modal--show');
     overlay.classList.remove('overlay--show');
   });
+
+  ymaps.ready(function() {
+    var myMap = new ymaps.Map(
+        'map-canvas',
+        {
+          center: [59.9386236, 30.3230243],
+          zoom: 16
+        },
+        {
+          searchControlProvider: 'yandex#search'
+        }
+      ),
+      myPlacemark = new ymaps.Placemark(
+        myMap.getCenter(),
+        {
+          balloonContent: 'Gllacy'
+        },
+        {
+          iconLayout: 'default#image'
+        }
+      );
+
+    myMap.geoObjects.add(myPlacemark);
+  });
 })();
