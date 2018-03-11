@@ -46,7 +46,10 @@
           balloonContent: 'Gllacy'
         },
         {
-          iconLayout: 'default#image'
+          iconLayout: 'default#image',
+          iconImageHref: '../img/map-pin.svg',
+          iconImageSize: [79, 139],
+          iconImageOffset: [-39, -139]
         }
       );
 
