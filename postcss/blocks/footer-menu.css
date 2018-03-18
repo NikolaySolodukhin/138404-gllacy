@@ -44,7 +44,7 @@
       display: block;
       width: 15px;
       height: 13px;
-      background-image: url("../../img/icon-heart.svg");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14.562' height='12.66' viewBox='0 0 14.562 12.66'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23f7f8f8;fill-rule:evenodd%7D%3C/style%3E%3C/defs%3E%3Cpath id='Сердце' class='cls-1' d='M434.606 1584.73s7.285-3.6 7.285-8.22c0-5.13-5.5-5.94-7.3-1.71m.049 9.93s-7.285-3.6-7.285-8.22c0-5.13 5.5-5.94 7.3-1.71' transform='translate%28-427.344 -1572.06%29'/%3E%3C/svg%3E");
       background-repeat: no-repeat;
     }
   }

@@ -1,10 +1,11 @@
-.products-promo__wrapper {
+.products__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   margin-bottom: 20px;
 }
 
-.products-promo__item {
+.products__item {
 
   &--hit {
     &::before {

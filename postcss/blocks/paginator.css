@@ -1,0 +1,83 @@
+.paginator {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.paginator__page {
+  display: inline-block;
+  min-width: 18px;
+  height: 18px;
+  margin-right: 3px;
+  padding-top: 4px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+
+  &--current {
+    color: #353535;
+    background-color: white;
+    border-radius: 14px;
+    cursor: not-allowed;
+  }
+
+  &:not(.paginator__page--current):hover,
+  &:not(.paginator__page--current):focus {
+    background-color: rgba(255,255,255,.2);
+    border-radius: 14px;
+  }
+}
+
+.paginator__arrow {
+  position: relative;
+  display: inline-block;
+  min-width: 18px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: transparent;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+    border-left: 2px solid rgba(255, 255, 255, 1);
+  }
+
+  &--prev {
+    &::before {
+      left: 0;
+      transform: rotate(45deg);
+    }
+  }
+
+  &--next {
+    &::before {
+      right: -3px;
+      transform: rotate(-134deg);
+    }
+  }
+
+  &--inactive {
+    cursor: not-allowed;
+
+    &::before {
+      border-color: rgba(255, 255, 255, .2);
+    }
+  }
+
+}

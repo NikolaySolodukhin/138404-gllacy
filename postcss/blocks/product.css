@@ -9,9 +9,13 @@
     margin-right: 0;
   }
 
+  &--catalog {
+    margin-bottom: 20px;
+  }
+
   &:hover,
   &:focus {
-    z-index: 0;
+    z-index: 1;
 
     &::after {
       content: '';

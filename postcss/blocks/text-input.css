@@ -104,6 +104,10 @@
   &--form {
     margin-bottom: 20px;
   }
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .text-input__label {

@@ -48,6 +48,32 @@
   margin-bottom: 40px;
 }
 
+.page__breadcrumbs {
+  margin-top: 15px;
+  margin-right: 250px;
+  margin-bottom: 4px;
+  margin-left: 0;
+}
+
+.page__title {
+  margin-top: 0;
+  margin-bottom: 23px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.page__filters {
+  max-width: 860px;
+  margin-bottom: 31px;
+}
+
+.page__paginator {
+  margin: 43px 0 0;
+  padding-bottom: 29px;
+  border-bottom: 1px solid #a9bbb1;
+}
+
 #btn-1:checked ~ .page__wrapper {
   background-color: #849d8f;
   background-image: url('../img/bg-first.png');
