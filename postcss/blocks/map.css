@@ -1,0 +1,21 @@
+.map {
+  position: relative;
+  width: 100%;
+  height: 429px;
+  background-color: #e1e3bd;
+  background-image: url("../../img/bg-map.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.map__feedback {
+  position: absolute;
+  top: 62px;
+  left: 50%;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 100%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}

@@ -1,0 +1,4 @@
+.news-subscription {
+  display: flex;
+  justify-content: space-between;
+}

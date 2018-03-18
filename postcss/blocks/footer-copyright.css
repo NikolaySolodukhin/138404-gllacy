@@ -1,0 +1,28 @@
+.footer-copyright__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.footer-copyright__link {
+  color: white;
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #ffbc9e;
+  }
+
+  &:hover .footer-copyright__link-content,
+  &:active .footer-copyright__link-content,
+  &:focus .footer-copyright__link-content {
+    border-bottom: 1px solid rgba(249,172,159,.3);
+  }
+}
+
+.footer-copyright__link-content {
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}

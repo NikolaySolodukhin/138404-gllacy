@@ -1,0 +1,64 @@
+.social {
+  align-self: center;
+}
+
+.social__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 186px;
+  margin: 0;
+}
+
+.social__link {
+  position: relative;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 31px;
+  height: 31px;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: center;
+  background-color: transparent;
+  border: 4px solid rgba(225,225,225,.5);
+  border-radius: 19px;
+  opacity: 0.8;
+
+  &:hover,
+  &:focus {
+    border: 4px solid rgba(230, 235, 233, .71);
+    opacity: 1;
+  }
+
+  &:active {
+    box-shadow: inset 0 2px 1px 0 #888;
+  }
+
+  &--tw {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31.375' height='31.4' viewBox='0 0 31.375 31.4'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff;fill-rule:evenodd;opacity:.8%7D%3C/style%3E%3C/defs%3E%3Cpath id='Твитер' class='cls-1' d='M38.427 2355.17a15.69 15.69 0 1 1-15.692 15.69 15.688 15.688 0 0 1 15.692-15.69zm9.137 10.81a7.331 7.331 0 0 1-2.092.57 3.663 3.663 0 0 0 1.6-2.02 7.4 7.4 0 0 1-2.313.89 3.645 3.645 0 0 0-6.207 3.32 10.316 10.316 0 0 1-7.507-3.81 3.655 3.655 0 0 0 1.127 4.87 3.68 3.68 0 0 1-1.65-.46v.05a3.651 3.651 0 0 0 2.922 3.57 3.788 3.788 0 0 1-.959.13 3.859 3.859 0 0 1-.685-.07 3.643 3.643 0 0 0 3.4 2.53 7.29 7.29 0 0 1-4.524 1.56 8.286 8.286 0 0 1-.869-.05 10.354 10.354 0 0 0 15.946-8.73c0-.16 0-.31-.011-.47a7.328 7.328 0 0 0 1.823-1.88z' transform='translate%28-22.75 -2355.16%29'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &--vk {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31.375' height='31.41' viewBox='0 0 31.375 31.41'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff;fill-rule:evenodd;opacity:.8%7D%3C/style%3E%3C/defs%3E%3Cpath id='ВК' class='cls-1' d='M185.865 2355.23a15.69 15.69 0 1 1-15.692 15.69 15.687 15.687 0 0 1 15.692-15.69zm5.968 18.25a3.1 3.1 0 0 0-.758-2.2 3.7 3.7 0 0 0-2.016-1.09v-.07a2.881 2.881 0 0 0 1.371-1.14 3.211 3.211 0 0 0 .5-1.77 3.133 3.133 0 0 0-.362-1.52 2.6 2.6 0 0 0-1.091-1.05 4.514 4.514 0 0 0-1.446-.48 17.993 17.993 0 0 0-2.269-.11h-4.8v13.59h5.438a8.906 8.906 0 0 0 2.331-.25 4.774 4.774 0 0 0 1.686-.86 3.583 3.583 0 0 0 1.032-1.27 3.909 3.909 0 0 0 .384-1.78zm-4.373-5.59a1.5 1.5 0 0 0-.169-.67 1 1 0 0 0-.527-.5 2.11 2.11 0 0 0-.8-.17c-.309 0-.767-.01-1.375-.01h-.237v2.88h.43c.583 0 .994-.01 1.229-.02a2.045 2.045 0 0 0 .726-.19 1.129 1.129 0 0 0 .563-.53 1.9 1.9 0 0 0 .157-.79zm.856 5.53a1.673 1.673 0 0 0-.255-.99 1.533 1.533 0 0 0-.767-.54 2.658 2.658 0 0 0-.853-.13c-.362-.01-.848-.01-1.456-.01h-.63v3.4h.184c.888 0 1.5 0 1.843-.02a2.867 2.867 0 0 0 1.04-.24 1.381 1.381 0 0 0 .68-.59 1.813 1.813 0 0 0 .214-.88z' transform='translate%28-170.188 -2355.22%29'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &--fb {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31.375' height='31.41' viewBox='0 0 31.375 31.41'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff;fill-rule:evenodd;opacity:.8%7D%3C/style%3E%3C/defs%3E%3Cpath id='ФБ' class='cls-1' d='M136.865 2355.23a15.69 15.69 0 1 1-15.692 15.69 15.687 15.687 0 0 1 15.692-15.69zm.773 24.99v-9.29h2.743l.285-3.09h-3.028v-1.86c0-.89.085-1.25 1.367-1.25h1.764v-3.43h-2.792c-3.294 0-4.082 1.54-4.082 4.34v2.2h-1.889v3.09h1.894v9.29h3.738z' transform='translate%28-121.188 -2355.22%29'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &--inst {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31.376' height='31.41' viewBox='0 0 31.376 31.41'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff;fill-rule:evenodd;opacity:.8%7D%3C/style%3E%3C/defs%3E%3Cpath id='Инста' class='cls-1' d='M87.865 2355.23a15.69 15.69 0 1 1-15.692 15.69 15.688 15.688 0 0 1 15.692-15.69zm6.272 23.61a1.745 1.745 0 0 0 1.745-1.75v-12.31a1.743 1.743 0 0 0-1.745-1.74H81.809a1.743 1.743 0 0 0-1.745 1.74v12.31a1.745 1.745 0 0 0 1.745 1.75h12.327zm-1.375-9.1a4.921 4.921 0 1 1-9.529 0h-1.38v6.78a.609.609 0 0 0 .611.61h11.065a.609.609 0 0 0 .611-.61v-6.78h-1.379zM88 2368.13a2.848 2.848 0 1 1 0 5.68 2.84 2.84 0 0 1 0-5.68zm3.7-3.31h1.86a.609.609 0 0 1 .611.61v1.86a.609.609 0 0 1-.611.61H91.7a.609.609 0 0 1-.611-.61v-1.86a.609.609 0 0 1 .611-.61z' transform='translate%28-72.188 -2355.22%29'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}

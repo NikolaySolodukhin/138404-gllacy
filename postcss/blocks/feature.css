@@ -1,0 +1,45 @@
+.feature {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature__item {
+  box-sizing: border-box;
+  width: calc(var(--column-width) * 2 + var(--padding-between-column));
+  margin-bottom: 40px;
+  padding: 15px 20px 23px;
+  text-align: right;
+  border-radius: 15px;
+}
+
+.feature__item--raspberries {
+  background-color: #811e3b;
+  background-image: url("../../img/bg-raspberries.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feature__item--chocolate {
+  background-color: #563022;
+  background-image: url(../img/bg-chocolate.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feature__title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  text-align: left;
+}
+
+.feature__description {
+  min-height: 66px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: left;
+}
