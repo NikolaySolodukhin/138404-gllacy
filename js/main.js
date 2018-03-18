@@ -1,9 +1,9 @@
+'use strict';
 (function() {
-  'use strict';
-  const link = document.querySelector('.feedback__btn');
-  const overlay = document.querySelector('.overlay');
-  const popup = overlay.parentNode.querySelector('.modal');
-  const close = popup.querySelector('.modal__btn');
+  var link = document.querySelector('.feedback__btn');
+  var overlay = document.querySelector('.overlay');
+  var popup = overlay.parentNode.querySelector('.modal');
+  var close = popup.querySelector('.modal__btn');
 
   link.addEventListener('click', function(event) {
     event.preventDefault();

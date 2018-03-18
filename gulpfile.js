@@ -25,6 +25,7 @@ const reporter = require('postcss-reporter');
 const eslint = require('gulp-eslint');
 const sourcemaps = require('gulp-sourcemaps');
 const sprites = require('postcss-sprites');
+const critical = require('critical').stream;
 
 gulp.task('clean', function() {
   return del('build');
@@ -35,10 +36,6 @@ gulp.task('clean:dev', function() {
 });
 
 gulp.task('style', function() {
-  const opts = {
-    stylesheetPath: './build/css',
-    spritePath: './build/img/'
-  };
   return gulp
     .src('postcss/style.css')
     .pipe(plumber())
@@ -49,10 +46,9 @@ gulp.task('style', function() {
           sort: true
         }),
         autoprefixer({
-          browsers: ['last 4 versions']
+          browsers: ['last 2 versions']
         }),
-        flexbugsFixes(),
-        sprites(opts)
+        flexbugsFixes()
       ])
     )
     .pipe(csscomb('./.csscomb.json'))
@@ -67,26 +63,15 @@ gulp.task('style', function() {
 });
 
 gulp.task('style:dev', function() {
-  const opts = {
-    stylesheetPath: './css',
-    spritePath: './img/sprite/',
-    filterBy: function(image) {
-      if (!/\/img\/sprite\//.test(image.url)) {
-        return Promise.reject();
-      }
-      return Promise.resolve();
-    }
-  };
   const processors = [
     precss(),
     autoprefixer({
-      browsers: ['last 4 versions']
+      browsers: ['last 2 versions']
     }),
     flexbugsFixes(),
     reporter({
       clearReportedMessages: 'true'
-    }),
-    sprites(opts)
+    })
   ];
   return gulp
     .src('postcss/style.css')
@@ -118,25 +103,33 @@ gulp.task('lintjs', function() {
 
 gulp.task('htmlminify', function() {
   return gulp
-    .src('*.html')
+    .src('build/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build/'));
 });
 
 gulp.task('jsmin', function() {
   return gulp
-    .src(['js/utils.js'])
-    .pipe(uglify())
+    .src(['js/main.js'])
+    .pipe(
+      uglify({
+        compress: {
+          booleans: true,
+          loops: true,
+          unused: true,
+          warnings: false,
+          drop_console: true,
+          unsafe: true,
+          dead_code: true
+        },
+        output: {
+          beautify: false,
+          comments: false
+        }
+      })
+    )
     .pipe(gulp.dest('build/js'));
 });
-
-// gulp.task('concat:dev', function() {
-//   return gulp
-//     .src(['js/utils.js', 'js/map.js'])
-//     .pipe(concat('main.js'))
-//     .pipe(gulp.dest('js'))
-//     .pipe(server.stream());
-// });
 
 gulp.task('images', function() {
   return gulp
@@ -183,6 +176,38 @@ gulp.task('svg', function() {
     .pipe(gulp.dest('img/'));
 });
 
+gulp.task('critical', function() {
+  return gulp
+    .src('./*.html')
+    .pipe(
+      critical({
+        base: './',
+        inline: true,
+        css: 'build/css/style.css',
+        minify: true,
+        ignore: ['@font-face', /url\(/],
+        dimensions: [
+          {
+            height: 1024,
+            width: 768
+          },
+          {
+            height: 768,
+            width: 1024
+          },
+          {
+            height: 900,
+            width: 1200
+          }
+        ]
+      })
+    )
+    .on('error', function(err) {
+      gutil.log(gutil.colors.red(err.message));
+    })
+    .pipe(gulp.dest('build/'));
+});
+
 gulp.task('copy', function() {
   return gulp
     .src(['fonts/*.{woff,woff2}', 'img/*.{svg,png,jpg,gif}'], {
@@ -216,7 +241,13 @@ gulp.task('serve', ['clean:dev', 'style:dev'], function() {
 });
 
 gulp.task('build', function(fn) {
-  run('clean', ['copy', 'style', 'htmlminify'], fn);
+  run(
+    'clean',
+    ['copy', 'style', 'jsmin', 'symbols'],
+    'critical',
+    'htmlminify',
+    fn
+  );
 });
 
 gulp.task('demo', function() {
