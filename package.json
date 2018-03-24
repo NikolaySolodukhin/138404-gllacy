@@ -5,11 +5,11 @@
   "description": "Gllacy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.x",
-    "autoprefixer": "7.2.x",
+    "autoprefixer": "8.2.x",
     "browser-sync": "2.23.6",
     "css-mqpacker": "^6.0.2",
     "del": "^3.0.0",
-    "eslint": "4.17.0",
+    "eslint": "4.19.1",
     "eslint-config-htmlacademy": "0.4.x",
     "gulp": "3.9.1",
     "gulp-concat": "^2.6.1",
@@ -18,7 +18,7 @@
     "gulp-eslint": "^4.0.2",
     "gulp-gh-pages": "^0.5.4",
     "gulp-html-minifier2": "^1.1.8",
-    "gulp-htmlhint": "^2.0.0",
+    "gulp-htmlhint": "^2.1.0",
     "gulp-imagemin": "^4.1.0",
     "gulp-plumber": "1.2.0",
     "gulp-postcss": "^7.0.1",
@@ -35,7 +35,7 @@
     "postcss-reporter": "^5.0.0",
     "postcss-sorting": "^3.1.0",
     "postcss-sprites": "^4.2.1",
-    "precss": "3.1.0",
+    "precss": "3.1.2",
     "run-sequence": "^2.2.1"
   },
   "scripts": {

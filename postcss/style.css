@@ -1,0 +1,54 @@
+@import "../node_modules/normalize.css/normalize.css";
+@import "global/fonts.css";
+@import "variables.css";
+@import "mixins.css";
+
+/*header*/
+@import "blocks/page.css";
+@import "blocks/container.css";
+@import "blocks/main-header.css";
+@import "blocks/logo.css";
+@import "blocks/main-navigation.css";
+@import "blocks/catalog-navigation.css";
+@import "blocks/search.css";
+@import "blocks/form-search.css";
+@import "blocks/text-input.css";
+@import "blocks/login.css";
+@import "blocks/form-login.css";
+@import "blocks/btn.css";
+@import "blocks/basket.css";
+@import "blocks/table-order.css";
+@import "blocks/contacts.css";
+
+
+/*index.html*/
+@import "blocks/slider.css";
+@import "blocks/feature.css";
+@import "blocks/products.css";
+@import "blocks/product.css";
+@import "blocks/advantages.css";
+@import "blocks/news-subscription.css";
+@import "blocks/news.css";
+@import "blocks/subscription.css";
+@import "blocks/map.css";
+@import "blocks/feedback.css";
+
+/*catalog.html*/
+@import "blocks/breadcrumbs.css";
+@import "blocks/form-filter.css";
+@import "blocks/survey.css";
+@import "blocks/radio-input.css";
+@import "blocks/checkbox-input.css";
+@import "blocks/paginator.css";
+
+
+/*footer*/
+@import "blocks/main-footer.css";
+@import "blocks/social.css";
+@import "blocks/footer-menu.css";
+@import "blocks/footer-copyright.css";
+@import "blocks/overlay.css";
+@import "blocks/modal.css";
+@import "blocks/feedback-form.css";
+@import "blocks/textarea.css";
+

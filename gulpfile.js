@@ -25,7 +25,6 @@ const reporter = require('postcss-reporter');
 const eslint = require('gulp-eslint');
 const sourcemaps = require('gulp-sourcemaps');
 const sprites = require('postcss-sprites');
-const critical = require('critical').stream;
 
 gulp.task('clean', function() {
   return del('build');
@@ -103,7 +102,7 @@ gulp.task('lintjs', function() {
 
 gulp.task('htmlminify', function() {
   return gulp
-    .src('build/*.html')
+    .src('*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build/'));
 });
@@ -176,37 +175,6 @@ gulp.task('svg', function() {
     .pipe(gulp.dest('img/'));
 });
 
-gulp.task('critical', function() {
-  return gulp
-    .src('./*.html')
-    .pipe(
-      critical({
-        base: './',
-        inline: true,
-        css: 'build/css/style.css',
-        minify: true,
-        ignore: ['@font-face', /url\(/],
-        dimensions: [
-          {
-            height: 1024,
-            width: 768
-          },
-          {
-            height: 768,
-            width: 1024
-          },
-          {
-            height: 900,
-            width: 1200
-          }
-        ]
-      })
-    )
-    .on('error', function(err) {
-      gutil.log(gutil.colors.red(err.message));
-    })
-    .pipe(gulp.dest('build/'));
-});
 
 gulp.task('copy', function() {
   return gulp
@@ -244,7 +212,6 @@ gulp.task('build', function(fn) {
   run(
     'clean',
     ['copy', 'style', 'jsmin', 'symbols'],
-    'critical',
     'htmlminify',
     fn
   );

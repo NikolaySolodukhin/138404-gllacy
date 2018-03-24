@@ -3,7 +3,7 @@
   width: calc(var(--column-width) * 2 + var(--padding-between-column));
   min-height: 220px;
   padding: 5px;
-  color: #323232;
+  color: var(--color-text);
   background-color: white;
   background-image: url(../img/bg-email.png);
   border-radius: 15px;
@@ -20,7 +20,7 @@
   padding-right: 17px;
   padding-bottom: 35px;
   padding-left: 20px;
-  background-color: #f8f7f4;
+  background-color: var(--bg-color-hue-white);
   border-radius: 15px;
 }
 

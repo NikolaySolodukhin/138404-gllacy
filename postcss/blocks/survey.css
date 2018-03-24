@@ -45,7 +45,7 @@
 
   &:hover,
   &:focus {
-    color: #323232;
+    color: var(--color-text);
     background-color: white;
   }
 
@@ -59,7 +59,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #323232;
+  color: var(--color-text);
   background-color: white;
 }
 
@@ -93,7 +93,7 @@
   height: 22px;
   margin-top: -11px;
   margin-left: -11px;
-  background-color: #f8f7f4;
+  background-color: var(--bg-color-hue-white);
   border-radius: 50%;
   outline: none;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.1);

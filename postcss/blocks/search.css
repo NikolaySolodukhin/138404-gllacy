@@ -12,7 +12,7 @@
 
   &:hover,
   &:focus {
-    background-color: #f8f7f4;
+    background-color: var(--bg-color-hue-white);
     background-image: url("../../img/sprite/sprite.png");
     background-position: -4px -191px;
 

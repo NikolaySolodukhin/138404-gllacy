@@ -3,7 +3,7 @@
   width: calc(var(--column-width) * 2 + var(--padding-between-column));
   min-height: 220px;
   padding: 20px;
-  color: #323232;
+  color: var(--color-text);
   background-color: white;
   background-image: url("../../img/bg-strawberry.jpg");
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  color: #323232;
+  color: var(--color-text);
 
   &:hover,
   &:active,

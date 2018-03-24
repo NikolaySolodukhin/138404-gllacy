@@ -9,7 +9,7 @@
   width: 477px;
   min-height: 441px;
   padding: 15px 25px 27px;
-  background-color: #f8f7f4;
+  background-color: var(--bg-color-hue-white);
   border-radius: 10px;
   transform: translate(-50%,-50%);
 
@@ -47,7 +47,7 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  color: #323232;
+  color: var(--color-text);
 }
 
 .modal__form {
